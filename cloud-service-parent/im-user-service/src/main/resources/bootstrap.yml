@@ -1,0 +1,68 @@
+
+server:
+  port: 8902
+spring:
+  application:
+    name: im-user-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: dev
+      name: im-user-service
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+        add-mappings: false
+
+#http://eureka.dev.yai.im:8900 内部测试环境
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+      service-url:
+       defaultZone: http://eureka.dev.yai.im:8900/eureka/ #http://localhost:8900/eureka/
+mysql:
+    datasource:
+      test1:
+        borrowConnectionTimeout: 30
+        loginTimeout: 30
+        maintenanceInterval: 60
+        maxIdleTime: 60
+        maxLifetime: 20000
+        maxPoolSize: 25
+        minPoolSize: 3
+        password: 123456
+        testQuery: select 1
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+        username: root
+    test2:
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifetime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      password: 123456
+      testQuery: select 1
+      url: jdbc:mysql://localhost:3306/order?useUnicode=true&characterEncoding=utf-8
+      username: root
+log4j:
+  appender:
+    stdout: org.apache.log4j.ConsoleAppender
+    stdout.layout: org.apache.log4j.SimpleLayout
+  logger:
+    Java:
+      sql:
+        Connection: DEBUG
+    com:
+      ibatis: DEBUG
+      ibatis.common.jdbc.ScriptRunner: DEBUG
+      ibatis.common.jdbc.SimpleDataSource: DEBUG
+    java:
+      sql:
+        PreparedStatement: DEBUG
+        Statement: DEBUG
+  rootLogger: debug,stdout,logfile

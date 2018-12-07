@@ -1,0 +1,64 @@
+setting:
+  #验证码的失效时间
+  cache:
+    verificationcode:
+      timeout: 6000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.dev.yai.im:8900/eureka/
+spring:
+  cloud:
+    stream:
+      binders:
+        verificationCode:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 192.168.1.245
+                port: 5672
+                username: im
+                password: 123123
+                virtual-host: /
+      bindings:
+        vCodeConsumer:
+          destination: vcode
+          binder: verificationCode
+          group: sender
+        vCodeProducter:
+          destination: vcode
+          contentType: application/json
+          binder: verificationCode
+          group: sender
+  #Redis配置
+  redis:
+    database: 0 # Redis数据库索引（默认为0）
+    host: 192.168.1.245  #Redis服务器地址
+    port: 6379 # Redis服务器连接端口
+    password: # Redis服务器连接密码（默认为空）
+    jedis:
+      pool:
+        max-active: 20 # 连接池最大连接数（使用负值表示没有限制）
+        max-idle: 10 # 连接池中的最大空闲连接
+        max-wait: 1000 # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        min-idle: 5 # 连接池中的最小空闲连接
+        timeout: 0 # 连接超时时间（毫秒）
+yai:
+  service:
+    sms:
+      vcode-message: "Your verification code: %s"
+      sender: twilio
+      twilio:
+        #账号id
+        accountId: AC951e3213fc8148d5e8537045c56a8d56
+        #账号授权token
+        authToken: 385efe259b2501abf2a2ccd7c4bd0752
+        #消息服务sid
+        messageServiceSid: MG778e7908f0a57d44a5911d7234e10229
+        #发送短信的twilio短信号码
+        #fromNumbers:
+      nexmo:
+        apiKey: 02a1405b
+        apiSecret: bN4PRBzCiQ7ITgb7
+        from: YAI.im

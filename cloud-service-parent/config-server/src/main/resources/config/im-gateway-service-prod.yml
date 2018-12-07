@@ -1,0 +1,63 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: api.dev.yai.im
+  client:
+    service-url:
+      defaultZone: http://eureka.dev.yai.im:8900/eureka/
+spring:
+  cloud:
+    gateway:
+      routes:
+      #登录路由
+      - id: login_route
+        uri: lb://IM-USER-SERVICE
+        predicates:
+        - Path=/v1/login
+      #验证码路由
+      - id: vcode_route
+        uri: lb://VERIFICATION-CODE-SERVICE
+        predicates:
+        - Path=/v1/vcode/**
+      #基础服务数据路由
+      - id: basic_route_area
+        uri: lb://IM-BASIC-SERVICE
+        predicates:
+        - Path=/v1/{p:area|attachments|webrtc|websocket}/**
+      #用户服务路由
+      - id: user_route
+        uri: lb://IM-USER-SERVICE
+        predicates:
+        - Path=/v1/{p:user|friends|search}/**
+      #群组服务路由
+      - id: rooms_route
+        uri: lb://IM-ROOM-SERVICE
+        predicates:
+        - Path=/v1/rooms/**
+  #Redis配置
+  redis:
+    database: 0 # Redis数据库索引（默认为0）
+    host: 192.168.1.245  #Redis服务器地址
+    port: 6379 # Redis服务器连接端口
+    password: # Redis服务器连接密码（默认为空）
+    jedis:
+      pool:
+        max-active: 20 # 连接池最大连接数（使用负值表示没有限制）
+        max-idle: 10 # 连接池中的最大空闲连接
+        max-wait: 1000 # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        min-idle: 5 # 连接池中的最小空闲连接
+        timeout: 0 # 连接超时时间（毫秒）
+  application:
+    name: im-gateway-service
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    org.springframework.http.server.reactive: INFO
+    org.springframework.web.reactive: INFO
+    reactor.ipc.netty: INFO
+im:
+  filter:
+    xtoken:
+      excludeRouterId:
+      - login_route
+      - vcode_route

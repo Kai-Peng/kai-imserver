@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserProfileMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserProfile">
+    <id column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="gender" jdbcType="TINYINT" property="gender" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="signature" jdbcType="VARCHAR" property="signature" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="created" jdbcType="BIGINT" property="created" />
+    <result column="last_updated" jdbcType="BIGINT" property="lastUpdated" />
+    <result column="friend_mode" jdbcType="BIT" property="friendMode" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    user_id, nick_name, gender, area, avatar, signature, password, created, last_updated , friend_mode
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_user_profile
+    where user_id = #{userId,jdbcType=BIGINT}
+  </select>
+
+  <select id="getCount"  resultType="java.lang.Integer">
+    select count(*) from im_user_profile
+    where user_id = #{userId,jdbcType=BIGINT} and password = #{password,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_user_profile
+    where user_id = #{userId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserProfile">
+    insert into im_user_profile (user_id, nick_name, gender, 
+      area, avatar, signature, 
+      password, created, last_updated , friend_mode
+      )
+    values (#{userId,jdbcType=BIGINT}, #{nickName,jdbcType=VARCHAR}, #{gender,jdbcType=TINYINT}, 
+      #{area,jdbcType=VARCHAR}, #{avatar,jdbcType=VARCHAR}, #{signature,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, #{lastUpdated,jdbcType=TIMESTAMP}
+      , #{friendMode,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserProfile">
+    insert into im_user_profile
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="nickName != null">
+        nick_name,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="area != null">
+        area,
+      </if>
+      <if test="avatar != null">
+        avatar,
+      </if>
+      <if test="signature != null">
+        signature,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+      <if test="lastUpdated != null">
+        last_updated,
+      </if>
+
+      <if test="friendMode != null">
+        friend_mode,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="nickName != null">
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="area != null">
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="avatar != null">
+        #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null">
+        #{signature,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdated != null">
+        #{lastUpdated,jdbcType=TIMESTAMP},
+      </if>
+
+      <if test="friendMode != null">
+        #{friendMode,jdbcType=BIT},
+      </if>
+
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserProfile">
+    update im_user_profile
+    <set>
+      <if test="nickName != null">
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="area != null">
+        area = #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="avatar != null">
+        avatar = #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null">
+        signature = #{signature,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdated != null">
+        last_updated = #{lastUpdated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="friendMode != null">
+        friend_mode = #{friendMode,jdbcType=BIT},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserProfile">
+    update im_user_profile
+    set nick_name = #{nickName,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=TINYINT},
+      area = #{area,jdbcType=VARCHAR},
+      avatar = #{avatar,jdbcType=VARCHAR},
+      signature = #{signature,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      created = #{created,jdbcType=TIMESTAMP},
+      last_updated = #{lastUpdated,jdbcType=TIMESTAMP},
+      friend_mode = #{friendMode,jdbcType=BIT},
+    where user_id = #{userId,jdbcType=BIGINT}
+
+  </update>
+</mapper>

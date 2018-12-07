@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserFriendsMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserFriends">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="friend_id" jdbcType="BIGINT" property="friendId" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="blocked" jdbcType="BIT" property="blocked" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="created" jdbcType="BIGINT" property="created" />
+    <result column="dnd_mode" jdbcType="BIT" property="dnd_mode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, friend_id, type, blocked, real_name, mobile, description, created , dnd_mode
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_friends
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="getFriends"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_friends
+    where user_id = #{user_id,jdbcType=BIGINT} limit #{start} , #{end}
+  </select>
+
+  <select id="isFriendOf"  resultType="java.lang.Integer">
+    select count(*) from im_friends
+    where user_id = #{userId,jdbcType=BIGINT} and friend_id = #{friendId,jdbcType=BIGINT}
+  </select>
+  <!--返回存在的用户正确的好友-->
+  <select id="checkUserFriends" resultType="java.util.List">
+    select
+    im_friends.friend_id
+    from im_friends
+    where user_id == #{userId}
+    and friend_id in
+    <foreach collection="friends" item="friendId" open="(" close=")" separator=",">
+      #{friendId}
+    </foreach>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_friends
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+
+  <delete id="deleteMyFriend" parameterType="java.lang.Long">
+    delete from im_friends
+    where user_id = #{userId,jdbcType=BIGINT} and  friend_id = #{friendId,jdbcType=BIGINT}
+  </delete>
+
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserFriends">
+    insert into im_friends (id, user_id, friend_id, 
+      type, blocked, real_name, 
+      mobile, description, created
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{friendId,jdbcType=BIGINT}, 
+      #{type,jdbcType=INTEGER}, #{blocked,jdbcType=BIT}, #{realName,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserFriends">
+    insert into im_friends
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="friendId != null">
+        friend_id,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="blocked != null">
+        blocked,
+      </if>
+      <if test="realName != null">
+        real_name,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="friendId != null">
+        #{friendId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="blocked != null">
+        #{blocked,jdbcType=BIT},
+      </if>
+      <if test="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+
+    <update id="updateFriend" parameterType="im.kai.server.service.user.domain.dto.UserFriends">
+        update im_friends
+        <set>
+            <if test="blocked != null">
+                blocked = #{blocked,jdbcType=BIT},
+            </if>
+            <if test="realName != null">
+                real_name = #{realName,jdbcType=VARCHAR},
+            </if>
+            <if test="mobile != null">
+                mobile = #{mobile,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=VARCHAR},
+            </if>
+
+        </set>
+        where user_id = #{userId,jdbcType=BIGINT} and friend_id = #{friendId,jdbcType=BIGINT}
+    </update>
+
+
+
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserFriends">
+    update im_friends
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="friendId != null">
+        friend_id = #{friendId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="blocked != null">
+        blocked = #{blocked,jdbcType=BIT},
+      </if>
+      <if test="realName != null">
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserFriends">
+    update im_friends
+    set user_id = #{userId,jdbcType=BIGINT},
+      friend_id = #{friendId,jdbcType=BIGINT},
+      type = #{type,jdbcType=INTEGER},
+      blocked = #{blocked,jdbcType=BIT},
+      real_name = #{realName,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      created = #{created,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

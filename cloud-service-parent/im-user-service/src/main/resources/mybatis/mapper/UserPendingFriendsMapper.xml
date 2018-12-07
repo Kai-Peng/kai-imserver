@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserPendingFriendsMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserPendingFriends">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="friend_id" jdbcType="BIGINT" property="friendId" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="created" jdbcType="BIGINT" property="created" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, friend_id, message, created
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_pending_friends
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="getPendingFriends"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_pending_friends
+    where friend_id = #{user_id,jdbcType=BIGINT}
+    <if test="start != 0">
+     and id &lt; #{start,jdbcType=BIGINT}
+    </if>
+    order by created desc limit #{limit}
+  </select>
+
+  <select id="getOnePendingFriend"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_pending_friends
+    where user_id = #{userId,jdbcType=BIGINT} and friend_id = #{friendId,jdbcType=BIGINT}
+
+  </select>
+
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_pending_friends
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+
+  <delete id="deletePendingFriend" parameterType="java.lang.Long">
+    delete from im_pending_friends
+    where user_id = #{userId ,jdbcType=BIGINT} and friend_id = #{friendId,jdbcType=BIGINT}
+  </delete>
+
+
+  <delete id="rejectInvitation" parameterType="java.lang.Long">
+    delete from im_pending_friends
+    where user_id = #{userId,jdbcType=BIGINT} and friend_id = #{friendId,jdbcType=BIGINT}
+  </delete>
+
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserPendingFriends">
+    insert into im_pending_friends (id, user_id, friend_id, 
+      message, created)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{friendId,jdbcType=BIGINT}, 
+      #{message,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserPendingFriends">
+    insert into im_pending_friends
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="friendId != null">
+        friend_id,
+      </if>
+      <if test="message != null">
+        message,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="friendId != null">
+        #{friendId,jdbcType=BIGINT},
+      </if>
+      <if test="message != null">
+        #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserPendingFriends">
+    update im_pending_friends
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="friendId != null">
+        friend_id = #{friendId,jdbcType=BIGINT},
+      </if>
+      <if test="message != null">
+        message = #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserPendingFriends">
+    update im_pending_friends
+    set user_id = #{userId,jdbcType=BIGINT},
+      friend_id = #{friendId,jdbcType=BIGINT},
+      message = #{message,jdbcType=VARCHAR},
+      created = #{created,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,180 @@
+syntax = "proto3";
+package im.yai;
+
+option java_package = "im.kai.server.service.message.protocol";
+option java_outer_classname = "MessageProtos";
+
+message Message {
+    enum Type {
+        UNKNOWN         = 0;    //未知
+        TEXT            = 1;    //文本消息
+        IMAGE           = 2;    //图片消息
+        AUDIO           = 3;    //音频消息
+        VIDEO           = 4;    //视频消息
+        FILE            = 5;    //文件消息
+        CONTACTS        = 6;    //名片消息
+        LOCATION        = 7;    //位置消息
+
+        VOICE_CALL      = 21;   //语音通话
+        VIDEO_CALL      = 22;   //视频通话
+    }
+    //消息序号
+    uint64 seq             = 1;
+    //消息类型
+    Type   type            = 2;
+    //消息来源用户（发送方为空)
+    string from_user_id      = 3;
+    //消息来源用户设备（发送方为空)
+    int32 from_device_type   = 4;
+    //消息来源群组（发送方为空)
+    string from_room_id      = 5;
+    //消息接收用户（接收方为空）
+    string to_user_id        = 6;
+    //消息接收用户设备（接收方为空）
+    int32 to_device_type     = 7;
+    //消息接收群（接收方为空）
+    string to_room_id        = 8;
+    //消息时间（时间戳）
+    uint64 timestamp       = 9;
+    //消息内容（不同的type有不定的定义结构）
+    bytes content          = 10;
+}
+
+//图片消息(Message.type = AUDIO)
+message ImageMessage {
+    //附件id
+    string  id         = 1;
+    //音频类型（如：image/jpeg | image/png | image/gif)
+    string  content_type = 2;
+    //图片大小
+    uint32  size        = 3;
+    //图片的原始宽度
+    uint32  width       = 4;
+    //图片的原始高度
+    uint32  height      = 5;
+    //图片缩略图
+    bytes  thumbnail   = 6;
+    //图片的原图地址
+    string  url         = 7;
+    //文件的md5 hash值
+    string  md5         = 8;
+    //文件名称
+    bytes  file_name     = 9;
+}
+
+//图片消息(Message.type = IMAGE)
+message AudioMessage {
+    //附件id
+    string  id          = 1;
+    //音频类型（如：audio/mp3 | audio/x-aiff)
+    string  content_type = 2;
+    //音频大小
+    uint32  size        = 3;
+    //音频时长
+    uint32  duration    = 4;
+    //文件地址
+    string  url         = 5;
+    //文件的md5 hash值
+    string  md5         = 6;
+}
+
+//视频消息(Message.type = VIDEO)
+message VideoMessage {
+    //附件id
+    string  id          = 1;
+    //视频类型（如：video/3gp | video/mp4)
+    string  content_type = 2;
+    //文件大小
+    uint32  size        = 3;
+    //视频时长
+    uint32  duration    = 4;
+    //视频的封面图地址
+    bytes  thumbnail   = 5;
+    //文件地址
+    string  url         = 6;
+    //文件的md5 hash值
+    string  md5         = 7;
+}
+
+//文件消息(Message.type = File)
+message FileMessage {
+    //附件id
+    string  id             = 1;
+    //文件类型（如：audio/mp3 | audio/x-aiff)
+    string  content_type    = 2;
+    //文件大小
+    uint32  size           = 3;
+    //文件名称
+    bytes  file_name        = 4;
+    //文件地址
+    string  url            = 5;
+    //文件的md5 hash值
+    string  md5            = 6;
+}
+
+//名片消息(Message.type = Contacts)
+message ContactsMessage {
+    enum Type {
+        UNKNOWN = 0;
+        //用户名片
+        USER    = 1;
+        //群名片
+        ROOM    = 2;
+    }
+    //类型
+    Type type              = 1;
+    //id（用户则为userId, 群则为群id)
+    string  id             = 2;
+    //昵称
+    bytes  name            = 3;
+    //头像
+    string  avatar         = 4;
+}
+
+//位置消息(Message.type = LOCATION)
+message LocationMessage {
+    //经度
+    double  longitude              = 1;
+    //纬度
+    double  latitude               = 2;
+    //位置名称
+    bytes  title                   = 4;
+    //截图地址
+    string  url                    = 5;
+}
+
+//通话消息（Message.type = VOICE_CALL | VIDEO_CALL)
+message CallMessage {
+    enum Type {
+        UNKNOWN     = 0;
+        //发起通话
+        OFFER       = 1;
+        //接通通话
+        ANSWER      = 2;
+        //状态更新
+        UPDATE      = 3;
+        //拒听
+        BUSY        = 4;
+        //挂断
+        Hangup      = 5;
+    }
+    message Offer {
+        //sdp
+        string description = 1;
+    }
+
+    message Answer {
+        //sdp
+        string description = 1;
+    }
+
+    message IceUpdate {
+        string sdp_mid        = 1;
+        uint32 sdp_mline_index = 2;
+        string sdp           = 3;
+    }
+    //消息类型
+    Type   type    = 1;
+    //消息内容
+    bytes  data = 2;
+}

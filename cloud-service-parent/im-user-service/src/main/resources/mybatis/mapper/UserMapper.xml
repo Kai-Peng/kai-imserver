@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.User">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="im_number" jdbcType="VARCHAR" property="imNumber" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, im_number, mobile
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="selectByMobile" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_user
+    where mobile = #{mobile,jdbcType=VARCHAR}
+  </select>
+
+  <select id="getCount" parameterType="java.lang.String"  resultType="java.lang.Integer" >
+    select count(*) from im_user where mobile = #{mobile,jdbcType=VARCHAR}
+  </select>
+
+
+
+  <select id="selectByIMNum" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_userselectByMobile
+    where mobile = #{im_number,jdbcType=VARCHAR}
+  </select>
+  <!--返回存在的用户id-->
+  <select id="checkUsers" resultType="java.util.List">
+    select
+    im_user.id
+    from im_user
+    where id in
+    <foreach collection="users" item="userId" open="(" close=")" separator=",">
+      #{userId}
+    </foreach>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.User" useGeneratedKeys="true" keyProperty="id">
+    insert into im_user (id, im_number, mobile
+      )
+    values (#{id,jdbcType=BIGINT}, #{imNumber,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.User">
+    insert into im_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="imNumber != null">
+        im_number,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="imNumber != null">
+        #{imNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.User">
+    update im_user
+    <set>
+      <if test="imNumber != null">
+        im_number = #{imNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.User">
+    update im_user
+    set im_number = #{imNumber,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="im.kai.server.service.room.service.mapper.RoomMapper" >
+    <cache/>
+    <resultMap id="BaseResultMap" type="im.kai.server.service.room.domain.dto.Room" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <id column="name" property="name" jdbcType="BIGINT" />
+        <id column="total_user" property="totalUser" jdbcType="BIGINT" />
+        <id column="created" property="created" jdbcType="BIGINT" />
+        <id column="created_by" property="createdBy" jdbcType="BIGINT" />
+        <id column="owner_id" property="ownerId" jdbcType="BIGINT" />
+        <id column="locked" property="locked" jdbcType="BIGINT" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id,name,icon,total_user,created,created_by,owner_id,locked
+    </sql>
+    <!--根据id获取群组-->
+    <select id="findById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM  im_room
+        WHERE id = #{roomId}
+    </select>
+    <!--根据id获取群组-->
+    <select id="findByIds" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM im_room  WHERE id in
+        <foreach collection="roomIds" item="roomId" open="(" close=")" separator=",">
+            #{roomId}
+        </foreach>
+    </select>
+    <!--创建群组-->
+    <insert id="save" parameterType="im.kai.server.service.room.domain.dto.Room" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO im_room(name,     icon,     total_user,   owner_id,   created_by,   locked,     created)
+        values              (#{name}, #{icon},  #{totalUser}, #{ownerId}, #{createdBy}, #{locked},  #{created})
+    </insert>
+    <!--更新群名称-->
+    <update id="updateRoomName" parameterType="im.kai.server.service.room.domain.dto.Room" >
+        UPDATE    im_room
+        SET        name = #{name}
+        WHERE     id = #{roomId}
+    </update>
+    <!--更新群头像-->
+    <update id="updateRoomIcon">
+       UPDATE     im_room
+       SET        icon = #{icon}
+       WHERE      id = #{roomId}
+    </update>
+    <!--更新群锁定-->
+    <update id="updateLockRoom">
+       UPDATE     im_room
+       SET         locked = #{isLock}
+       WHERE      id = #{roomId}
+    </update>
+    <!--更新群人数-->
+    <update id="addTotalUser">
+       UPDATE     im_room
+       SET        total_user = total_user + #{totalUser}
+       WHERE      id = #{roomId}
+    </update>
+    <!--更新群人数-->
+    <update id="removeTotalUser">
+       UPDATE     im_room
+       SET        total_user = total_user - #{totalUser}
+       WHERE      id = #{roomId}
+    </update>
+    <!--更新群主-->
+    <update id="updateOwner">
+      UPDATE      im_room
+      SET         owner_id = #{successorId}
+      WHERE       id = #{roomId}
+    </update>
+    <!--更新群组名称 图标-->
+    <update id="updateRoomInfo">
+      UPDATE      im_room
+      SET
+        <if test="name = null">name = #{name},</if>
+        <if test="icon != null">icon = #{icon},</if>
+        id = id
+      WHERE     id = #{id}
+    </update>
+    <!--解散群-->
+    <delete id="delete">
+        DELETE    im_room
+        WHERE     id = #{roomId}
+    </delete>
+</mapper>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="im.kai.server.service.room.service.mapper.RoomUserMapper" >
+    <cache/>
+    <resultMap id="BaseResultMap" type="im.kai.server.service.room.domain.dto.RoomUser" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <id column="room_id" property="roomId" jdbcType="BIGINT" />
+        <id column="user_id" property="userId" jdbcType="BIGINT" />
+        <id column="inviter" property="inviter" jdbcType="BIGINT" />
+        <id column="blocked" property="blocked" jdbcType="BIGINT" />
+        <id column="created" property="created" jdbcType="BIGINT" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id,room_id,user_id,inviter,blocked,created
+    </sql>
+    <!--获取用户所有的群-->
+    <select id="findByUserId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM  im_room_user
+        WHERE user_id = #{userId}
+    </select>
+    <!--获取用户所有的群组id-->
+    <select id="findRoomIdsByUserId"  resultType="java.lang.Long">
+        SELECT im_room_user.room_id
+        FROM  im_room_user
+        WHERE user_id = #{userId}
+    </select>
+    <!--获取群组与成员间的关系-->
+    <select id="findByUserIdAndRoomId"  resultType="im.kai.server.service.room.domain.dto.RoomUser">
+        SELECT <include refid="Base_Column_List"/>
+        FROM  im_room_user
+        WHERE user_id = #{userId}
+        AND   room_id = #{roomId}
+    </select>
+    <!--获取群组所有用户-->
+    <select id="findByRoomId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM  im_room_user
+        WHERE room_id = #{roomId}
+    </select>
+    <!--获取群组所有用户-->
+    <select id="findUserIdsByRoomId"  resultType="java.lang.Long">
+        SELECT im_room_user.user_id
+        FROM  im_room_user
+        WHERE room_id = #{roomId}
+    </select>
+    <!--群组添加成员-->
+    <insert id="addMembers" parameterType="im.kai.server.service.room.domain.dto.RoomUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT ignore INTO im_room_user (user_id, room_id,inviter,blocked,created) values
+        <foreach collection='members' item='member' index='index' separator=','>
+        (#{member}, #{roomId}, #{inviterId},0, #{created})
+        </foreach>
+    </insert>
+    <!--更新用户屏蔽群组状态-->
+    <update id="updateBlocked" parameterType="im.kai.server.service.room.domain.dto.RoomUser" >
+        UPDATE im_room_user
+        SET     blocked = #{isBlocked}
+        WHERE   user_id = #{userId}
+        AND     room_id = #{roomId}
+    </update>
+    <!--更新群组勿扰模式-->
+    <update id="updateDnd" parameterType="im.kai.server.service.room.domain.dto.RoomUser" >
+        UPDATE im_room_user
+        SET     dnd = #{isDnd}
+        WHERE   user_id = #{userId}
+        AND     room_id = #{roomId}
+    </update>
+    <!--群组移除成员-->
+    <delete id="removeMembers">
+        DELETE FROM im_room_user
+        WHERE room_id = #{roomId}
+        AND user_id in
+        <foreach collection="members" item="member" open="(" close=")" separator=",">
+            (#{member})
+        </foreach>
+    </delete>
+    <!--退出群组-->
+    <delete id="quitGroup">
+        DELETE FROM   im_room_user
+        WHERE         room_id = #{roomId}
+        AND           user_id = #{userId}
+    </delete>
+
+</mapper>

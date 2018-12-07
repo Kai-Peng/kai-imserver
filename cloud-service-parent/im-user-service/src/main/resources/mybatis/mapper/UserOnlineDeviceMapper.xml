@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserOnlineDeviceMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="device_type" jdbcType="TINYINT" property="deviceType" />
+    <result column="device_id" jdbcType="BIGINT" property="deviceId" />
+    <result column="auth_token" jdbcType="VARCHAR" property="authToken" />
+    <result column="last_seen" jdbcType="BIGINT" property="lastSeen" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, device_type, device_id, auth_token, last_seen
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_user_online_device
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="existDevice" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select count(*) from im_user_online_device
+    where device_id = #{device_id,jdbcType=BIGINT}
+  </select>
+
+  <select id="getDevice" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_user_online_device
+    where device_id = #{device_id,jdbcType=BIGINT} and user_id = #{user_id,jdbcType=BIGINT} and device_type > 0
+  </select>
+
+  <select id="getOnlineDevice"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_user_online_device
+    where user_id = #{user_id,jdbcType=BIGINT} and device_type = #{device_type,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_user_online_device
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    insert into im_user_online_device (id, user_id, device_type, 
+      device_id, auth_token, last_seen
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{deviceType,jdbcType=TINYINT}, 
+      #{deviceId,jdbcType=BIGINT}, #{authToken,jdbcType=VARCHAR}, #{lastSeen,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    insert into im_user_online_device
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="deviceType != null">
+        device_type,
+      </if>
+      <if test="deviceId != null">
+        device_id,
+      </if>
+      <if test="authToken != null">
+        auth_token,
+      </if>
+      <if test="lastSeen != null">
+        last_seen,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="deviceType != null">
+        #{deviceType,jdbcType=TINYINT},
+      </if>
+      <if test="deviceId != null">
+        #{deviceId,jdbcType=BIGINT},
+      </if>
+      <if test="authToken != null">
+        #{authToken,jdbcType=VARCHAR},
+      </if>
+      <if test="lastSeen != null">
+        #{lastSeen,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    update im_user_online_device
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="deviceType != null">
+        device_type = #{deviceType,jdbcType=TINYINT},
+      </if>
+      <if test="deviceId != null">
+        device_id = #{deviceId,jdbcType=BIGINT},
+      </if>
+      <if test="authToken != null">
+        auth_token = #{authToken,jdbcType=VARCHAR},
+      </if>
+      <if test="lastSeen != null">
+        last_seen = #{lastSeen,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <update id="updateOnlineState" parameterType="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    update im_user_online_device
+    <set>
+      <if test="authToken != null">
+        auth_token = #{authToken,jdbcType=VARCHAR},
+      </if>
+      <if test="lastSeen != null">
+        last_seen = #{lastSeen,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=BIGINT} and device_id = #{deviceId,jdbcType=VARCHAR}
+  </update>
+
+  <update id="setOffline" >
+    update im_user_online_device
+    <set>
+        auth_token = '' ,
+    </set>
+    where user_id = #{user_id,jdbcType=BIGINT} and device_id = #{device_id,jdbcType=VARCHAR}
+  </update>
+
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserOnlineDevice">
+    update im_user_online_device
+    set user_id = #{userId,jdbcType=BIGINT},
+      device_type = #{deviceType,jdbcType=TINYINT},
+      device_id = #{deviceId,jdbcType=BIGINT},
+      auth_token = #{authToken,jdbcType=VARCHAR},
+      last_seen = #{lastSeen,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

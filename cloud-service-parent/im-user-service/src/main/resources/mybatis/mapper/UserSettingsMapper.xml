@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserSettingsMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserSettings">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="target_key" jdbcType="VARCHAR" property="targetKey" />
+    <result column="data" jdbcType="VARCHAR" property="data" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, target_key, data, version
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_user_settings
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_user_settings
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserSettings">
+    insert into im_user_settings (id, user_id, target_key, 
+      data, version)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{targetKey,jdbcType=VARCHAR}, 
+      #{data,jdbcType=VARCHAR}, #{version,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserSettings">
+    insert into im_user_settings
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="targetKey != null">
+        target_key,
+      </if>
+      <if test="data != null">
+        data,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="targetKey != null">
+        #{targetKey,jdbcType=VARCHAR},
+      </if>
+      <if test="data != null">
+        #{data,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserSettings">
+    update im_user_settings
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="targetKey != null">
+        target_key = #{targetKey,jdbcType=VARCHAR},
+      </if>
+      <if test="data != null">
+        data = #{data,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserSettings">
+    update im_user_settings
+    set user_id = #{userId,jdbcType=BIGINT},
+      target_key = #{targetKey,jdbcType=VARCHAR},
+      data = #{data,jdbcType=VARCHAR},
+      version = #{version,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

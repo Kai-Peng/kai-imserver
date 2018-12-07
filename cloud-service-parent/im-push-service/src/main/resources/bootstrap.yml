@@ -1,0 +1,36 @@
+apn-config:
+  password: 123123
+  apn-env: 'dev'
+  pool-size: 3
+  cache-length: 9999
+  retries: 3
+  interval-time: 180000
+  timeout: 10000
+server:
+  port: 8905
+spring:
+  application:
+    name: im-push-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: dev
+      name: im-push-service
+  rabbitmq:
+    host: 192.168.1.245
+    port: 5672
+    username: im
+    password: 123123
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+  listener:
+    concurrency: 2
+    max-concurrency: 2
+eureka:
+  client:
+      service-url:
+        defaultZone: http://eureka.dev.yai.im:8900/eureka/

@@ -1,0 +1,23 @@
+server:
+  port: 8904
+spring:
+  application:
+    name: im-basic-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: dev
+      name: im-basic-service
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+      service-url:
+        defaultZone: http://eureka.dev.yai.im:8900/eureka/

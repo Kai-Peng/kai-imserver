@@ -1,0 +1,14 @@
+server:
+  port: 8990
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8900/eureka/
+  instance:
+    prefer-ip-address: true
+    #ip-address: config.dev.yai.im
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git

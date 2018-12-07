@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="im.kai.server.service.user.mapper.UserDeviceMapper">
+  <resultMap id="BaseResultMap" type="im.kai.server.service.user.domain.dto.UserDevice">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="lang" jdbcType="VARCHAR" property="lang" />
+    <result column="gcm_id" jdbcType="VARCHAR" property="gcmId" />
+    <result column="apn_id" jdbcType="VARCHAR" property="apnId" />
+    <result column="os" jdbcType="VARCHAR" property="os" />
+    <result column="imei" jdbcType="VARCHAR" property="imei" />
+    <result column="uuid" jdbcType="VARCHAR" property="uuid" />
+    <result column="created" jdbcType="BIGINT" property="created" />
+    <result column="last_seen" jdbcType="BIGINT" property="lastSeen" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, type, name, version, lang, gcm_id, apn_id, os, imei, uuid, created, last_seen
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from im_user_device
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+  <select id="getDeviceWithCode" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from im_user_device
+    where code = #{code,jdbcType=VARCHAR} and user_id = #{user_id , jdbcType=BIGINT}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from im_user_device
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="im.kai.server.service.user.domain.dto.UserDevice" useGeneratedKeys="true" keyProperty="id">
+    insert into im_user_device (id, user_id, type, 
+      name, version, lang, 
+      gcm_id, apn_id, os, imei, 
+      uuid, created, last_seen , code , subtype
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{type,jdbcType=TINYINT}, 
+      #{name,jdbcType=VARCHAR}, #{version,jdbcType=VARCHAR}, #{lang,jdbcType=VARCHAR}, 
+      #{gcmId,jdbcType=VARCHAR}, #{apnId,jdbcType=VARCHAR}, #{os,jdbcType=VARCHAR}, #{imei,jdbcType=VARCHAR}, 
+      #{uuid,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, #{lastSeen,jdbcType=TIMESTAMP} , #{code,jdbcType=VARCHAR},
+      #{subtype,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="im.kai.server.service.user.domain.dto.UserDevice">
+    insert into im_user_device
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="lang != null">
+        lang,
+      </if>
+      <if test="gcmId != null">
+        gcm_id,
+      </if>
+      <if test="apnId != null">
+        apn_id,
+      </if>
+      <if test="os != null">
+        os,
+      </if>
+      <if test="imei != null">
+        imei,
+      </if>
+      <if test="uuid != null">
+        uuid,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+      <if test="lastSeen != null">
+        last_seen,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="lang != null">
+        #{lang,jdbcType=VARCHAR},
+      </if>
+      <if test="gcmId != null">
+        #{gcmId,jdbcType=VARCHAR},
+      </if>
+      <if test="apnId != null">
+        #{apnId,jdbcType=VARCHAR},
+      </if>
+      <if test="os != null">
+        #{os,jdbcType=VARCHAR},
+      </if>
+      <if test="imei != null">
+        #{imei,jdbcType=VARCHAR},
+      </if>
+      <if test="uuid != null">
+        #{uuid,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastSeen != null">
+        #{lastSeen,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="im.kai.server.service.user.domain.dto.UserDevice">
+    update im_user_device
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="lang != null">
+        lang = #{lang,jdbcType=VARCHAR},
+      </if>
+      <if test="gcmId != null">
+        gcm_id = #{gcmId,jdbcType=VARCHAR},
+      </if>
+      <if test="apnId != null">
+        apn_id = #{apnId,jdbcType=VARCHAR},
+      </if>
+      <if test="os != null">
+        os = #{os,jdbcType=VARCHAR},
+      </if>
+      <if test="imei != null">
+        imei = #{imei,jdbcType=VARCHAR},
+      </if>
+      <if test="uuid != null">
+        uuid = #{uuid,jdbcType=VARCHAR},
+      </if>
+      <if test="created != null">
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastSeen != null">
+        last_seen = #{lastSeen,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="im.kai.server.service.user.domain.dto.UserDevice">
+    update im_user_device
+    set user_id = #{userId,jdbcType=BIGINT},
+      type = #{type,jdbcType=TINYINT},
+      name = #{name,jdbcType=VARCHAR},
+      version = #{version,jdbcType=VARCHAR},
+      lang = #{lang,jdbcType=VARCHAR},
+      gcm_id = #{gcmId,jdbcType=VARCHAR},
+      apn_id = #{apnId,jdbcType=VARCHAR},
+      os = #{os,jdbcType=VARCHAR},
+      imei = #{imei,jdbcType=VARCHAR},
+      uuid = #{uuid,jdbcType=VARCHAR},
+      created = #{created,jdbcType=TIMESTAMP},
+      last_seen = #{lastSeen,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,22 @@
+server:
+  port: 8903
+spring:
+  application:
+    name: im-room-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: dev
+      name: im-room-service
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+      service-url:
+        defaultZone: http://eureka.dev.yai.im:8900/eureka/
+logging:
+  config:
+    classpath: room_logg_dev.xml
+#    classpath: room_prod_dev.xml
