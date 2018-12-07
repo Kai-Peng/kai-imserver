@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka.dev.yai.im:8900/eureka/
+      defaultZone: http://localhost:8900/eureka/
 spring:
   datasource:
     url: jdbc:mysql://192.168.1.245:3306/im_room?useUnicode=true&characterEncoding=utf-8

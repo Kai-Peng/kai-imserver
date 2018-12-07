@@ -5,6 +5,6 @@ spring:
         git:
           uri: https://github.com/Kai-Peng/kai-imserver.git
           search-paths: /cloud-service-parent/config-server/src/main/resources/config
-          username: yai
-          password: Vd32Da32faf
-          default-label: ftr/v1.0
+          username: Kai-Peng
+          password: KavyPeng12345
+          default-label:

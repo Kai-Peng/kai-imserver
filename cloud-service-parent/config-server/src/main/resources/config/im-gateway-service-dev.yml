@@ -3,7 +3,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://eureka.dev.yai.im:8900/eureka/
+      defaultZone: http://localhost:8900/eureka/
 spring:
   cloud:
     gateway:

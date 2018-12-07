@@ -4,7 +4,7 @@ eureka:
     ip-address: base-service.dev.yai.im
   client:
     service-url:
-      defaultZone: http://eureka.dev.yai.im:8900/eureka/
+      defaultZone: http://localhost:8900/eureka/
 yai:
   service:
     #WebRTC 附件云存储配置信息
