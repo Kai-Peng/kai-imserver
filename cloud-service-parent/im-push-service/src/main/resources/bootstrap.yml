@@ -19,7 +19,7 @@ spring:
       profile: dev
       name: im-push-service
   rabbitmq:
-    host: 192.168.1.245
+    host: 47.107.127.196
     port: 5672
     username: im
     password: 123123

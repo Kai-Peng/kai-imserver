@@ -16,7 +16,7 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: 192.168.1.245
+                host: 47.107.127.196
                 port: 5672
                 username: im
                 password: 123123
@@ -34,7 +34,7 @@ spring:
   #Redis配置
   redis:
     database: 0 # Redis数据库索引（默认为0）
-    host: 192.168.1.245  #Redis服务器地址
+    host: 47.107.127.196  #Redis服务器地址
     port: 6379 # Redis服务器连接端口
     password: # Redis服务器连接密码（默认为空）
     jedis:

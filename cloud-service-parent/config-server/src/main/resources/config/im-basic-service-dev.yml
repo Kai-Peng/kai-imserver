@@ -14,7 +14,7 @@ yai:
     #WebRTC 附件云存储配置信息
     attachments:
       avatar:
-        host: http://192.168.1.245:9000
+        host: http://47.107.127.196:9000
         accessKey: AKIAIOSFODNN7EXAMPLE
         accessSecret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         region: default
@@ -22,7 +22,7 @@ yai:
         putDuration: 3600
         downDuration: 3600
       image:
-        host: http://192.168.1.245:9000
+        host: http://47.107.127.196:9000
         accessKey: AKIAIOSFODNN7EXAMPLE
         accessSecret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         region: default
@@ -30,7 +30,7 @@ yai:
         putDuration: 7200
         downDuration: 604800
       video:
-        host: http://192.168.1.245:9000
+        host: http://47.107.127.196:9000
         accessKey: AKIAIOSFODNN7EXAMPLE
         accessSecret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         region: default
@@ -38,7 +38,7 @@ yai:
         putDuration: 3600
         downDuration: 604800
       file:
-        host: http://192.168.1.245:9000
+        host: http://47.107.127.196:9000
         accessKey: AKIAIOSFODNN7EXAMPLE
         accessSecret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         region: default
@@ -46,7 +46,7 @@ yai:
         putDuration: 3600
         downDuration: 604800
       audio:
-        host: http://192.168.1.245:9000
+        host: http://47.107.127.196:9000
         accessKey: AKIAIOSFODNN7EXAMPLE
         accessSecret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
         region: default
@@ -58,10 +58,10 @@ yai:
       turn:
         secret: 4080218913 # TURN server secret
         hosts:
-        - turn:192.168.1.245:3478
-        - turns:192.168.1.245:5349
-        - turn:192.168.1.245:5349?transport=udp
-        - turns:192.168.1.245:3478?transport=udp
+        - turn:47.107.127.196:3478
+        - turns:47.107.127.196:5349
+        - turn:47.107.127.196:5349?transport=udp
+        - turns:47.107.127.196:3478?transport=udp
     #websocket聊天服务
     websocket:
       #数据加密密匙
