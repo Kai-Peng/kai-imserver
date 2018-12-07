@@ -16,13 +16,13 @@ spring:
   resources:
         add-mappings: false
 
-#http://eureka.dev.yai.im:8900 内部测试环境
+#http://localhost:8900 内部测试环境
 eureka:
   instance:
     prefer-ip-address: true
   client:
       service-url:
-       defaultZone: http://eureka.dev.yai.im:8900/eureka/ #http://localhost:8900/eureka/
+       defaultZone: http://localhost:8900/eureka/ #http://localhost:8900/eureka/
 mysql:
     datasource:
       test1:
