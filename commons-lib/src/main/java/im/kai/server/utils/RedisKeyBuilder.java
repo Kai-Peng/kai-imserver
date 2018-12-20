@@ -11,7 +11,7 @@ public class RedisKeyBuilder {
      * @return
      */
     public static String build(String prefix, String key){
-        return "yai.im/" + prefix + "/" + key;
+        return "kai.im/" + prefix + "/" + key;
     }
 
     /**
