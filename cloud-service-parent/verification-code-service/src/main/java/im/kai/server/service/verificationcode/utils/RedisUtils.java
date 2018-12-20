@@ -27,7 +27,7 @@ public class RedisUtils {
      * @return
      */
     public String getVCodeCacheKey(String mobile){
-        return "/yai/vcode/" + mobile;
+        return "/kai/vcode/" + mobile;
     }
 
 }

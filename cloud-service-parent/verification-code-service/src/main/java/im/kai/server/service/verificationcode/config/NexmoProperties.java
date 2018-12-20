@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 
 @Component
 @Validated
-@ConfigurationProperties("yai.service.sms.nexmo")
+@ConfigurationProperties("kai.service.sms.nexmo")
 @Data
 @RefreshScope
 public class NexmoProperties {

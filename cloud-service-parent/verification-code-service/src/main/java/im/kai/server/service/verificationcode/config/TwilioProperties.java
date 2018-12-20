@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 
 @Component
 @Validated
-@ConfigurationProperties("yai.service.sms.twilio")
+@ConfigurationProperties("kai.service.sms.twilio")
 @Data
 @RefreshScope
 public class TwilioProperties {

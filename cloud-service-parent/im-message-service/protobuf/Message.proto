@@ -1,5 +1,5 @@
 syntax = "proto3";
-package im.yai;
+package im.kai;
 
 option java_package = "im.kai.server.service.message.protocol";
 option java_outer_classname = "MessageProtos";

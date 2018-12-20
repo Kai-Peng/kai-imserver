@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: api.dev.yai.im
+    ip-address: api.dev.kai.im
   client:
     service-url:
       defaultZone: http://localhost:8900/eureka/

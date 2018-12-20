@@ -1,11 +1,11 @@
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: base-service.dev.yai.im
+    ip-address: base-service.dev.kai.im
   client:
     service-url:
       defaultZone: http://localhost:8900/eureka/
-yai:
+kai:
   service:
     #WebRTC 附件云存储配置信息
     attachments:

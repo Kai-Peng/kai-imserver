@@ -19,7 +19,7 @@ import java.util.Random;
 @Slf4j
 @Service
 @Profile("prod")
-@ConditionalOnProperty(prefix = "yai.service.sms", name = "sender", havingValue = "twilio")
+@ConditionalOnProperty(prefix = "kai.service.sms", name = "sender", havingValue = "twilio")
 public class TwilioSmsSender implements SmsSender {
     private TwilioProperties twilioProperties;
     private Random random;

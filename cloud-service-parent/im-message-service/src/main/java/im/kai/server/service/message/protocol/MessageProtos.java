@@ -15,7 +15,7 @@ public final class MessageProtos {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface MessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.Message)
+      // @@protoc_insertion_point(interface_extends:im.kai.Message)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -32,7 +32,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.Message.Type type = 2;</code>
+     * <code>.im.kai.Message.Type type = 2;</code>
      */
     int getTypeValue();
     /**
@@ -40,7 +40,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.Message.Type type = 2;</code>
+     * <code>.im.kai.Message.Type type = 2;</code>
      */
     im.kai.server.service.message.protocol.MessageProtos.Message.Type getType();
 
@@ -153,11 +153,11 @@ public final class MessageProtos {
     com.google.protobuf.ByteString getContent();
   }
   /**
-   * Protobuf type {@code im.yai.Message}
+   * Protobuf type {@code im.kai.Message}
    */
   public  static final class Message extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.Message)
+      // @@protoc_insertion_point(message_implements:im.kai.Message)
       MessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Message.newBuilder() to construct.
@@ -277,19 +277,19 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_Message_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_Message_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_Message_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.Message.class, im.kai.server.service.message.protocol.MessageProtos.Message.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.Message.Type}
+     * Protobuf enum {@code im.kai.Message.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -535,7 +535,7 @@ public final class MessageProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.Message.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.Message.Type)
     }
 
     public static final int SEQ_FIELD_NUMBER = 1;
@@ -558,7 +558,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.Message.Type type = 2;</code>
+     * <code>.im.kai.Message.Type type = 2;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -568,7 +568,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.Message.Type type = 2;</code>
+     * <code>.im.kai.Message.Type type = 2;</code>
      */
     public im.kai.server.service.message.protocol.MessageProtos.Message.Type getType() {
       @SuppressWarnings("deprecation")
@@ -1049,21 +1049,21 @@ public final class MessageProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code im.yai.Message}
+     * Protobuf type {@code im.kai.Message}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.Message)
+        // @@protoc_insertion_point(builder_implements:im.kai.Message)
         im.kai.server.service.message.protocol.MessageProtos.MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_Message_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_Message_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_Message_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.Message.class, im.kai.server.service.message.protocol.MessageProtos.Message.Builder.class);
       }
@@ -1112,7 +1112,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_Message_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_Message_descriptor;
       }
 
       @java.lang.Override
@@ -1297,7 +1297,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.Message.Type type = 2;</code>
+       * <code>.im.kai.Message.Type type = 2;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -1307,7 +1307,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.Message.Type type = 2;</code>
+       * <code>.im.kai.Message.Type type = 2;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -1319,7 +1319,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.Message.Type type = 2;</code>
+       * <code>.im.kai.Message.Type type = 2;</code>
        */
       public im.kai.server.service.message.protocol.MessageProtos.Message.Type getType() {
         @SuppressWarnings("deprecation")
@@ -1331,7 +1331,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.Message.Type type = 2;</code>
+       * <code>.im.kai.Message.Type type = 2;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.MessageProtos.Message.Type value) {
         if (value == null) {
@@ -1347,7 +1347,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.Message.Type type = 2;</code>
+       * <code>.im.kai.Message.Type type = 2;</code>
        */
       public Builder clearType() {
         
@@ -1879,10 +1879,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.Message)
+      // @@protoc_insertion_point(builder_scope:im.kai.Message)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.Message)
+    // @@protoc_insertion_point(class_scope:im.kai.Message)
     private static final im.kai.server.service.message.protocol.MessageProtos.Message DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.Message();
@@ -1920,7 +1920,7 @@ public final class MessageProtos {
   }
 
   public interface ImageMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.ImageMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.ImageMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2045,11 +2045,11 @@ public final class MessageProtos {
    *图片消息(Message.type = AUDIO)
    * </pre>
    *
-   * Protobuf type {@code im.yai.ImageMessage}
+   * Protobuf type {@code im.kai.ImageMessage}
    */
   public  static final class ImageMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.ImageMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.ImageMessage)
       ImageMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ImageMessage.newBuilder() to construct.
@@ -2162,13 +2162,13 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ImageMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ImageMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ImageMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ImageMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.ImageMessage.class, im.kai.server.service.message.protocol.MessageProtos.ImageMessage.Builder.class);
     }
@@ -2651,21 +2651,21 @@ public final class MessageProtos {
      *图片消息(Message.type = AUDIO)
      * </pre>
      *
-     * Protobuf type {@code im.yai.ImageMessage}
+     * Protobuf type {@code im.kai.ImageMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.ImageMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.ImageMessage)
         im.kai.server.service.message.protocol.MessageProtos.ImageMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ImageMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ImageMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ImageMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ImageMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.ImageMessage.class, im.kai.server.service.message.protocol.MessageProtos.ImageMessage.Builder.class);
       }
@@ -2712,7 +2712,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ImageMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ImageMessage_descriptor;
       }
 
       @java.lang.Override
@@ -3413,10 +3413,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.ImageMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.ImageMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.ImageMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.ImageMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.ImageMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.ImageMessage();
@@ -3454,7 +3454,7 @@ public final class MessageProtos {
   }
 
   public interface AudioMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.AudioMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.AudioMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3552,11 +3552,11 @@ public final class MessageProtos {
    *图片消息(Message.type = IMAGE)
    * </pre>
    *
-   * Protobuf type {@code im.yai.AudioMessage}
+   * Protobuf type {@code im.kai.AudioMessage}
    */
   public  static final class AudioMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.AudioMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.AudioMessage)
       AudioMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use AudioMessage.newBuilder() to construct.
@@ -3651,13 +3651,13 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_AudioMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_AudioMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_AudioMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_AudioMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.AudioMessage.class, im.kai.server.service.message.protocol.MessageProtos.AudioMessage.Builder.class);
     }
@@ -4068,21 +4068,21 @@ public final class MessageProtos {
      *图片消息(Message.type = IMAGE)
      * </pre>
      *
-     * Protobuf type {@code im.yai.AudioMessage}
+     * Protobuf type {@code im.kai.AudioMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.AudioMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.AudioMessage)
         im.kai.server.service.message.protocol.MessageProtos.AudioMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_AudioMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_AudioMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_AudioMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_AudioMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.AudioMessage.class, im.kai.server.service.message.protocol.MessageProtos.AudioMessage.Builder.class);
       }
@@ -4123,7 +4123,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_AudioMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_AudioMessage_descriptor;
       }
 
       @java.lang.Override
@@ -4692,10 +4692,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.AudioMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.AudioMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.AudioMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.AudioMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.AudioMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.AudioMessage();
@@ -4733,7 +4733,7 @@ public final class MessageProtos {
   }
 
   public interface VideoMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.VideoMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.VideoMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4840,11 +4840,11 @@ public final class MessageProtos {
    *视频消息(Message.type = VIDEO)
    * </pre>
    *
-   * Protobuf type {@code im.yai.VideoMessage}
+   * Protobuf type {@code im.kai.VideoMessage}
    */
   public  static final class VideoMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.VideoMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.VideoMessage)
       VideoMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use VideoMessage.newBuilder() to construct.
@@ -4945,13 +4945,13 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_VideoMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_VideoMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_VideoMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_VideoMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.VideoMessage.class, im.kai.server.service.message.protocol.MessageProtos.VideoMessage.Builder.class);
     }
@@ -5386,21 +5386,21 @@ public final class MessageProtos {
      *视频消息(Message.type = VIDEO)
      * </pre>
      *
-     * Protobuf type {@code im.yai.VideoMessage}
+     * Protobuf type {@code im.kai.VideoMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.VideoMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.VideoMessage)
         im.kai.server.service.message.protocol.MessageProtos.VideoMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_VideoMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_VideoMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_VideoMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_VideoMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.VideoMessage.class, im.kai.server.service.message.protocol.MessageProtos.VideoMessage.Builder.class);
       }
@@ -5443,7 +5443,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_VideoMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_VideoMessage_descriptor;
       }
 
       @java.lang.Override
@@ -6057,10 +6057,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.VideoMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.VideoMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.VideoMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.VideoMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.VideoMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.VideoMessage();
@@ -6098,7 +6098,7 @@ public final class MessageProtos {
   }
 
   public interface FileMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.FileMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.FileMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -6196,11 +6196,11 @@ public final class MessageProtos {
    *文件消息(Message.type = File)
    * </pre>
    *
-   * Protobuf type {@code im.yai.FileMessage}
+   * Protobuf type {@code im.kai.FileMessage}
    */
   public  static final class FileMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.FileMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.FileMessage)
       FileMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use FileMessage.newBuilder() to construct.
@@ -6295,13 +6295,13 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_FileMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_FileMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_FileMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_FileMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.FileMessage.class, im.kai.server.service.message.protocol.MessageProtos.FileMessage.Builder.class);
     }
@@ -6712,21 +6712,21 @@ public final class MessageProtos {
      *文件消息(Message.type = File)
      * </pre>
      *
-     * Protobuf type {@code im.yai.FileMessage}
+     * Protobuf type {@code im.kai.FileMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.FileMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.FileMessage)
         im.kai.server.service.message.protocol.MessageProtos.FileMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_FileMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_FileMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_FileMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_FileMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.FileMessage.class, im.kai.server.service.message.protocol.MessageProtos.FileMessage.Builder.class);
       }
@@ -6767,7 +6767,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_FileMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_FileMessage_descriptor;
       }
 
       @java.lang.Override
@@ -7339,10 +7339,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.FileMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.FileMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.FileMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.FileMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.FileMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.FileMessage();
@@ -7380,7 +7380,7 @@ public final class MessageProtos {
   }
 
   public interface ContactsMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.ContactsMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.ContactsMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -7388,7 +7388,7 @@ public final class MessageProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+     * <code>.im.kai.ContactsMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -7396,7 +7396,7 @@ public final class MessageProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+     * <code>.im.kai.ContactsMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Type getType();
 
@@ -7450,11 +7450,11 @@ public final class MessageProtos {
    *名片消息(Message.type = Contacts)
    * </pre>
    *
-   * Protobuf type {@code im.yai.ContactsMessage}
+   * Protobuf type {@code im.kai.ContactsMessage}
    */
   public  static final class ContactsMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.ContactsMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.ContactsMessage)
       ContactsMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use ContactsMessage.newBuilder() to construct.
@@ -7536,19 +7536,19 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ContactsMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ContactsMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ContactsMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ContactsMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.class, im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.ContactsMessage.Type}
+     * Protobuf enum {@code im.kai.ContactsMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -7667,7 +7667,7 @@ public final class MessageProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.ContactsMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.ContactsMessage.Type)
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
@@ -7677,7 +7677,7 @@ public final class MessageProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+     * <code>.im.kai.ContactsMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -7687,7 +7687,7 @@ public final class MessageProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+     * <code>.im.kai.ContactsMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -7983,21 +7983,21 @@ public final class MessageProtos {
      *名片消息(Message.type = Contacts)
      * </pre>
      *
-     * Protobuf type {@code im.yai.ContactsMessage}
+     * Protobuf type {@code im.kai.ContactsMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.ContactsMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.ContactsMessage)
         im.kai.server.service.message.protocol.MessageProtos.ContactsMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ContactsMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ContactsMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ContactsMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ContactsMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.class, im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Builder.class);
       }
@@ -8034,7 +8034,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_ContactsMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_ContactsMessage_descriptor;
       }
 
       @java.lang.Override
@@ -8155,7 +8155,7 @@ public final class MessageProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+       * <code>.im.kai.ContactsMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -8165,7 +8165,7 @@ public final class MessageProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+       * <code>.im.kai.ContactsMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -8177,7 +8177,7 @@ public final class MessageProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+       * <code>.im.kai.ContactsMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -8189,7 +8189,7 @@ public final class MessageProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+       * <code>.im.kai.ContactsMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.MessageProtos.ContactsMessage.Type value) {
         if (value == null) {
@@ -8205,7 +8205,7 @@ public final class MessageProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.ContactsMessage.Type type = 1;</code>
+       * <code>.im.kai.ContactsMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -8445,10 +8445,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.ContactsMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.ContactsMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.ContactsMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.ContactsMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.ContactsMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.ContactsMessage();
@@ -8486,7 +8486,7 @@ public final class MessageProtos {
   }
 
   public interface LocationMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.LocationMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.LocationMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -8539,11 +8539,11 @@ public final class MessageProtos {
    *位置消息(Message.type = LOCATION)
    * </pre>
    *
-   * Protobuf type {@code im.yai.LocationMessage}
+   * Protobuf type {@code im.kai.LocationMessage}
    */
   public  static final class LocationMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.LocationMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.LocationMessage)
       LocationMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use LocationMessage.newBuilder() to construct.
@@ -8623,13 +8623,13 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_LocationMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_LocationMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_LocationMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_LocationMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.LocationMessage.class, im.kai.server.service.message.protocol.MessageProtos.LocationMessage.Builder.class);
     }
@@ -8914,21 +8914,21 @@ public final class MessageProtos {
      *位置消息(Message.type = LOCATION)
      * </pre>
      *
-     * Protobuf type {@code im.yai.LocationMessage}
+     * Protobuf type {@code im.kai.LocationMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.LocationMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.LocationMessage)
         im.kai.server.service.message.protocol.MessageProtos.LocationMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_LocationMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_LocationMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_LocationMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_LocationMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.LocationMessage.class, im.kai.server.service.message.protocol.MessageProtos.LocationMessage.Builder.class);
       }
@@ -8965,7 +8965,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_LocationMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_LocationMessage_descriptor;
       }
 
       @java.lang.Override
@@ -9297,10 +9297,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.LocationMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.LocationMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.LocationMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.LocationMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.LocationMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.LocationMessage();
@@ -9338,7 +9338,7 @@ public final class MessageProtos {
   }
 
   public interface CallMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.CallMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.CallMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -9346,7 +9346,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.CallMessage.Type type = 1;</code>
+     * <code>.im.kai.CallMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -9354,7 +9354,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.CallMessage.Type type = 1;</code>
+     * <code>.im.kai.CallMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.MessageProtos.CallMessage.Type getType();
 
@@ -9372,11 +9372,11 @@ public final class MessageProtos {
    *通话消息（Message.type = VOICE_CALL | VIDEO_CALL)
    * </pre>
    *
-   * Protobuf type {@code im.yai.CallMessage}
+   * Protobuf type {@code im.kai.CallMessage}
    */
   public  static final class CallMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.CallMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.CallMessage)
       CallMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use CallMessage.newBuilder() to construct.
@@ -9444,19 +9444,19 @@ public final class MessageProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_descriptor;
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.MessageProtos.CallMessage.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.CallMessage.Type}
+     * Protobuf enum {@code im.kai.CallMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -9626,11 +9626,11 @@ public final class MessageProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.CallMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.CallMessage.Type)
     }
 
     public interface OfferOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.CallMessage.Offer)
+        // @@protoc_insertion_point(interface_extends:im.kai.CallMessage.Offer)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -9652,11 +9652,11 @@ public final class MessageProtos {
           getDescriptionBytes();
     }
     /**
-     * Protobuf type {@code im.yai.CallMessage.Offer}
+     * Protobuf type {@code im.kai.CallMessage.Offer}
      */
     public  static final class Offer extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.CallMessage.Offer)
+        // @@protoc_insertion_point(message_implements:im.kai.CallMessage.Offer)
         OfferOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Offer.newBuilder() to construct.
@@ -9718,13 +9718,13 @@ public final class MessageProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Offer_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Offer_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Offer_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Offer_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer.Builder.class);
       }
@@ -9927,21 +9927,21 @@ public final class MessageProtos {
         return builder;
       }
       /**
-       * Protobuf type {@code im.yai.CallMessage.Offer}
+       * Protobuf type {@code im.kai.CallMessage.Offer}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.CallMessage.Offer)
+          // @@protoc_insertion_point(builder_implements:im.kai.CallMessage.Offer)
           im.kai.server.service.message.protocol.MessageProtos.CallMessage.OfferOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Offer_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Offer_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Offer_fieldAccessorTable
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Offer_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer.Builder.class);
         }
@@ -9972,7 +9972,7 @@ public final class MessageProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Offer_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Offer_descriptor;
         }
 
         @java.lang.Override
@@ -10175,10 +10175,10 @@ public final class MessageProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.CallMessage.Offer)
+        // @@protoc_insertion_point(builder_scope:im.kai.CallMessage.Offer)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.CallMessage.Offer)
+      // @@protoc_insertion_point(class_scope:im.kai.CallMessage.Offer)
       private static final im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.CallMessage.Offer();
@@ -10216,7 +10216,7 @@ public final class MessageProtos {
     }
 
     public interface AnswerOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.CallMessage.Answer)
+        // @@protoc_insertion_point(interface_extends:im.kai.CallMessage.Answer)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -10238,11 +10238,11 @@ public final class MessageProtos {
           getDescriptionBytes();
     }
     /**
-     * Protobuf type {@code im.yai.CallMessage.Answer}
+     * Protobuf type {@code im.kai.CallMessage.Answer}
      */
     public  static final class Answer extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.CallMessage.Answer)
+        // @@protoc_insertion_point(message_implements:im.kai.CallMessage.Answer)
         AnswerOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use Answer.newBuilder() to construct.
@@ -10304,13 +10304,13 @@ public final class MessageProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Answer_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Answer_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Answer_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Answer_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer.Builder.class);
       }
@@ -10513,21 +10513,21 @@ public final class MessageProtos {
         return builder;
       }
       /**
-       * Protobuf type {@code im.yai.CallMessage.Answer}
+       * Protobuf type {@code im.kai.CallMessage.Answer}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.CallMessage.Answer)
+          // @@protoc_insertion_point(builder_implements:im.kai.CallMessage.Answer)
           im.kai.server.service.message.protocol.MessageProtos.CallMessage.AnswerOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Answer_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Answer_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Answer_fieldAccessorTable
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Answer_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer.Builder.class);
         }
@@ -10558,7 +10558,7 @@ public final class MessageProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_Answer_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_Answer_descriptor;
         }
 
         @java.lang.Override
@@ -10761,10 +10761,10 @@ public final class MessageProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.CallMessage.Answer)
+        // @@protoc_insertion_point(builder_scope:im.kai.CallMessage.Answer)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.CallMessage.Answer)
+      // @@protoc_insertion_point(class_scope:im.kai.CallMessage.Answer)
       private static final im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.CallMessage.Answer();
@@ -10802,7 +10802,7 @@ public final class MessageProtos {
     }
 
     public interface IceUpdateOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.CallMessage.IceUpdate)
+        // @@protoc_insertion_point(interface_extends:im.kai.CallMessage.IceUpdate)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -10831,11 +10831,11 @@ public final class MessageProtos {
           getSdpBytes();
     }
     /**
-     * Protobuf type {@code im.yai.CallMessage.IceUpdate}
+     * Protobuf type {@code im.kai.CallMessage.IceUpdate}
      */
     public  static final class IceUpdate extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.CallMessage.IceUpdate)
+        // @@protoc_insertion_point(message_implements:im.kai.CallMessage.IceUpdate)
         IceUpdateOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use IceUpdate.newBuilder() to construct.
@@ -10910,13 +10910,13 @@ public final class MessageProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_IceUpdate_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_IceUpdate_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_IceUpdate_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_IceUpdate_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate.Builder.class);
       }
@@ -11175,21 +11175,21 @@ public final class MessageProtos {
         return builder;
       }
       /**
-       * Protobuf type {@code im.yai.CallMessage.IceUpdate}
+       * Protobuf type {@code im.kai.CallMessage.IceUpdate}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.CallMessage.IceUpdate)
+          // @@protoc_insertion_point(builder_implements:im.kai.CallMessage.IceUpdate)
           im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdateOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_IceUpdate_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_IceUpdate_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_IceUpdate_fieldAccessorTable
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_IceUpdate_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate.Builder.class);
         }
@@ -11224,7 +11224,7 @@ public final class MessageProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_IceUpdate_descriptor;
+          return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_IceUpdate_descriptor;
         }
 
         @java.lang.Override
@@ -11511,10 +11511,10 @@ public final class MessageProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.CallMessage.IceUpdate)
+        // @@protoc_insertion_point(builder_scope:im.kai.CallMessage.IceUpdate)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.CallMessage.IceUpdate)
+      // @@protoc_insertion_point(class_scope:im.kai.CallMessage.IceUpdate)
       private static final im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.CallMessage.IceUpdate();
@@ -11558,7 +11558,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.CallMessage.Type type = 1;</code>
+     * <code>.im.kai.CallMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -11568,7 +11568,7 @@ public final class MessageProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.CallMessage.Type type = 1;</code>
+     * <code>.im.kai.CallMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.MessageProtos.CallMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -11760,21 +11760,21 @@ public final class MessageProtos {
      *通话消息（Message.type = VOICE_CALL | VIDEO_CALL)
      * </pre>
      *
-     * Protobuf type {@code im.yai.CallMessage}
+     * Protobuf type {@code im.kai.CallMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.CallMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.CallMessage)
         im.kai.server.service.message.protocol.MessageProtos.CallMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.MessageProtos.CallMessage.class, im.kai.server.service.message.protocol.MessageProtos.CallMessage.Builder.class);
       }
@@ -11807,7 +11807,7 @@ public final class MessageProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_yai_CallMessage_descriptor;
+        return im.kai.server.service.message.protocol.MessageProtos.internal_static_im_kai_CallMessage_descriptor;
       }
 
       @java.lang.Override
@@ -11918,7 +11918,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.CallMessage.Type type = 1;</code>
+       * <code>.im.kai.CallMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -11928,7 +11928,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.CallMessage.Type type = 1;</code>
+       * <code>.im.kai.CallMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -11940,7 +11940,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.CallMessage.Type type = 1;</code>
+       * <code>.im.kai.CallMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.MessageProtos.CallMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -11952,7 +11952,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.CallMessage.Type type = 1;</code>
+       * <code>.im.kai.CallMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.MessageProtos.CallMessage.Type value) {
         if (value == null) {
@@ -11968,7 +11968,7 @@ public final class MessageProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.CallMessage.Type type = 1;</code>
+       * <code>.im.kai.CallMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -12030,10 +12030,10 @@ public final class MessageProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.CallMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.CallMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.CallMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.CallMessage)
     private static final im.kai.server.service.message.protocol.MessageProtos.CallMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.MessageProtos.CallMessage();
@@ -12071,60 +12071,60 @@ public final class MessageProtos {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_Message_descriptor;
+    internal_static_im_kai_Message_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_Message_fieldAccessorTable;
+      internal_static_im_kai_Message_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_ImageMessage_descriptor;
+    internal_static_im_kai_ImageMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_ImageMessage_fieldAccessorTable;
+      internal_static_im_kai_ImageMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_AudioMessage_descriptor;
+    internal_static_im_kai_AudioMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_AudioMessage_fieldAccessorTable;
+      internal_static_im_kai_AudioMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_VideoMessage_descriptor;
+    internal_static_im_kai_VideoMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_VideoMessage_fieldAccessorTable;
+      internal_static_im_kai_VideoMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_FileMessage_descriptor;
+    internal_static_im_kai_FileMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_FileMessage_fieldAccessorTable;
+      internal_static_im_kai_FileMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_ContactsMessage_descriptor;
+    internal_static_im_kai_ContactsMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_ContactsMessage_fieldAccessorTable;
+      internal_static_im_kai_ContactsMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_LocationMessage_descriptor;
+    internal_static_im_kai_LocationMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_LocationMessage_fieldAccessorTable;
+      internal_static_im_kai_LocationMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_CallMessage_descriptor;
+    internal_static_im_kai_CallMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_CallMessage_fieldAccessorTable;
+      internal_static_im_kai_CallMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_CallMessage_Offer_descriptor;
+    internal_static_im_kai_CallMessage_Offer_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_CallMessage_Offer_fieldAccessorTable;
+      internal_static_im_kai_CallMessage_Offer_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_CallMessage_Answer_descriptor;
+    internal_static_im_kai_CallMessage_Answer_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_CallMessage_Answer_fieldAccessorTable;
+      internal_static_im_kai_CallMessage_Answer_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_CallMessage_IceUpdate_descriptor;
+    internal_static_im_kai_CallMessage_IceUpdate_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_CallMessage_IceUpdate_fieldAccessorTable;
+      internal_static_im_kai_CallMessage_IceUpdate_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -12134,8 +12134,8 @@ public final class MessageProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rMessage.proto\022\006im.yai\"\353\002\n\007Message\022\013\n\003s" +
-      "eq\030\001 \001(\004\022\"\n\004type\030\002 \001(\0162\024.im.yai.Message." +
+      "\n\rMessage.proto\022\006im.kai\"\353\002\n\007Message\022\013\n\003s" +
+      "eq\030\001 \001(\004\022\"\n\004type\030\002 \001(\0162\024.im.kai.Message." +
       "Type\022\024\n\014from_user_id\030\003 \001(\t\022\030\n\020from_devic" +
       "e_type\030\004 \001(\005\022\024\n\014from_room_id\030\005 \001(\t\022\022\n\nto" +
       "_user_id\030\006 \001(\t\022\026\n\016to_device_type\030\007 \001(\005\022\022" +
@@ -12157,7 +12157,7 @@ public final class MessageProtos {
       "\n\n\002id\030\001 \001(\t\022\024\n\014content_type\030\002 \001(\t\022\014\n\004siz" +
       "e\030\003 \001(\r\022\021\n\tfile_name\030\004 \001(\014\022\013\n\003url\030\005 \001(\t\022" +
       "\013\n\003md5\030\006 \001(\t\"\220\001\n\017ContactsMessage\022*\n\004type" +
-      "\030\001 \001(\0162\034.im.yai.ContactsMessage.Type\022\n\n\002" +
+      "\030\001 \001(\0162\034.im.kai.ContactsMessage.Type\022\n\n\002" +
       "id\030\002 \001(\t\022\014\n\004name\030\003 \001(\014\022\016\n\006avatar\030\004 \001(\t\"\'" +
       "\n\004Type\022\013\n\007UNKNOWN\020\000\022\010\n\004USER\020\001\022\010\n\004ROOM\020\002\"" +
       "R\n\017LocationMessage\022\021\n\tlongitude\030\001 \001(\001\022\020\n" +
@@ -12184,71 +12184,71 @@ public final class MessageProtos {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_im_yai_Message_descriptor =
+    internal_static_im_kai_Message_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_im_yai_Message_fieldAccessorTable = new
+    internal_static_im_kai_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_Message_descriptor,
+        internal_static_im_kai_Message_descriptor,
         new java.lang.String[] { "Seq", "Type", "FromUserId", "FromDeviceType", "FromRoomId", "ToUserId", "ToDeviceType", "ToRoomId", "Timestamp", "Content", });
-    internal_static_im_yai_ImageMessage_descriptor =
+    internal_static_im_kai_ImageMessage_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_im_yai_ImageMessage_fieldAccessorTable = new
+    internal_static_im_kai_ImageMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_ImageMessage_descriptor,
+        internal_static_im_kai_ImageMessage_descriptor,
         new java.lang.String[] { "Id", "ContentType", "Size", "Width", "Height", "Thumbnail", "Url", "Md5", "FileName", });
-    internal_static_im_yai_AudioMessage_descriptor =
+    internal_static_im_kai_AudioMessage_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_im_yai_AudioMessage_fieldAccessorTable = new
+    internal_static_im_kai_AudioMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_AudioMessage_descriptor,
+        internal_static_im_kai_AudioMessage_descriptor,
         new java.lang.String[] { "Id", "ContentType", "Size", "Duration", "Url", "Md5", });
-    internal_static_im_yai_VideoMessage_descriptor =
+    internal_static_im_kai_VideoMessage_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_im_yai_VideoMessage_fieldAccessorTable = new
+    internal_static_im_kai_VideoMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_VideoMessage_descriptor,
+        internal_static_im_kai_VideoMessage_descriptor,
         new java.lang.String[] { "Id", "ContentType", "Size", "Duration", "Thumbnail", "Url", "Md5", });
-    internal_static_im_yai_FileMessage_descriptor =
+    internal_static_im_kai_FileMessage_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_im_yai_FileMessage_fieldAccessorTable = new
+    internal_static_im_kai_FileMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_FileMessage_descriptor,
+        internal_static_im_kai_FileMessage_descriptor,
         new java.lang.String[] { "Id", "ContentType", "Size", "FileName", "Url", "Md5", });
-    internal_static_im_yai_ContactsMessage_descriptor =
+    internal_static_im_kai_ContactsMessage_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_im_yai_ContactsMessage_fieldAccessorTable = new
+    internal_static_im_kai_ContactsMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_ContactsMessage_descriptor,
+        internal_static_im_kai_ContactsMessage_descriptor,
         new java.lang.String[] { "Type", "Id", "Name", "Avatar", });
-    internal_static_im_yai_LocationMessage_descriptor =
+    internal_static_im_kai_LocationMessage_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_im_yai_LocationMessage_fieldAccessorTable = new
+    internal_static_im_kai_LocationMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_LocationMessage_descriptor,
+        internal_static_im_kai_LocationMessage_descriptor,
         new java.lang.String[] { "Longitude", "Latitude", "Title", "Url", });
-    internal_static_im_yai_CallMessage_descriptor =
+    internal_static_im_kai_CallMessage_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_im_yai_CallMessage_fieldAccessorTable = new
+    internal_static_im_kai_CallMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_CallMessage_descriptor,
+        internal_static_im_kai_CallMessage_descriptor,
         new java.lang.String[] { "Type", "Data", });
-    internal_static_im_yai_CallMessage_Offer_descriptor =
-      internal_static_im_yai_CallMessage_descriptor.getNestedTypes().get(0);
-    internal_static_im_yai_CallMessage_Offer_fieldAccessorTable = new
+    internal_static_im_kai_CallMessage_Offer_descriptor =
+      internal_static_im_kai_CallMessage_descriptor.getNestedTypes().get(0);
+    internal_static_im_kai_CallMessage_Offer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_CallMessage_Offer_descriptor,
+        internal_static_im_kai_CallMessage_Offer_descriptor,
         new java.lang.String[] { "Description", });
-    internal_static_im_yai_CallMessage_Answer_descriptor =
-      internal_static_im_yai_CallMessage_descriptor.getNestedTypes().get(1);
-    internal_static_im_yai_CallMessage_Answer_fieldAccessorTable = new
+    internal_static_im_kai_CallMessage_Answer_descriptor =
+      internal_static_im_kai_CallMessage_descriptor.getNestedTypes().get(1);
+    internal_static_im_kai_CallMessage_Answer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_CallMessage_Answer_descriptor,
+        internal_static_im_kai_CallMessage_Answer_descriptor,
         new java.lang.String[] { "Description", });
-    internal_static_im_yai_CallMessage_IceUpdate_descriptor =
-      internal_static_im_yai_CallMessage_descriptor.getNestedTypes().get(2);
-    internal_static_im_yai_CallMessage_IceUpdate_fieldAccessorTable = new
+    internal_static_im_kai_CallMessage_IceUpdate_descriptor =
+      internal_static_im_kai_CallMessage_descriptor.getNestedTypes().get(2);
+    internal_static_im_kai_CallMessage_IceUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_CallMessage_IceUpdate_descriptor,
+        internal_static_im_kai_CallMessage_IceUpdate_descriptor,
         new java.lang.String[] { "SdpMid", "SdpMlineIndex", "Sdp", });
   }
 

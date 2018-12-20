@@ -18,7 +18,7 @@ import org.springframework.util.Assert;
 @Slf4j
 @Service
 @Profile("prod")
-@ConditionalOnProperty(prefix = "yai.service.sms", name = "sender", havingValue = "nexmo")
+@ConditionalOnProperty(prefix = "kai.service.sms", name = "sender", havingValue = "nexmo")
 public class NexmoSmsSender implements SmsSender {
 
     private NexmoProperties nexmoProperties;

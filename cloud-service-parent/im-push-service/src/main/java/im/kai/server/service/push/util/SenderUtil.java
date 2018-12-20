@@ -22,7 +22,7 @@ import java.util.Map;
  */
 public class SenderUtil {
 
-    public static String keystore = "APNYAI.p12";
+    public static String keystore = "APNkai.p12";
     public static String password = "123123";
     public static final int numberOfThreads = 8;
 

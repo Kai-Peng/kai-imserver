@@ -184,11 +184,11 @@ public class FcmUtil {
     public static void main(String ...arges) throws IOException {
 
         FileInputStream fileInputStream =
-                new FileInputStream("C:\\Users\\pengp\\work_space\\im\\dev\\1.0\\yai-server\\cloud-service-parent\\im-push-service\\src\\main\\resources\\yai-im-fbaaf.json");
+                new FileInputStream("C:\\Users\\pengp\\work_space\\im\\dev\\1.0\\kai-server\\cloud-service-parent\\im-push-service\\src\\main\\resources\\kai-im-fbaaf.json");
         Map<String,Object> auth = new HashMap<>();
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(fileInputStream))
-                .setProjectId("yai-im-2018")
+                .setProjectId("kai-im-2018")
                 .build();
        FirebaseApp firebaseApp = FirebaseApp.initializeApp(options,"test");
        List<FirebaseApp> apps = FirebaseApp.getApps();

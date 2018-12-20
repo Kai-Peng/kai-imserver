@@ -23,7 +23,7 @@ public class SystemMessageResolver implements MessageResolver<MessageProtos.Mess
         AppVersionMessage appVersionMessage = new AppVersionMessage();
         appVersionMessage.setVersion("1.0.0");
         appVersionMessage.setUpdateLog("我有更新数据,yes ok!");
-        appVersionMessage.setUpdateUrl("http://www.yai.im/app/release.apk");
+        appVersionMessage.setUpdateUrl("http://www.kai.im/app/release.apk");
         appVersionMessage.setDownloadMode(WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode.DOWNLOAD_MODE_INSTALL);
         appVersionMessage.setUpdateMode(WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode.UPDATE_MODE_MANUAL);
 

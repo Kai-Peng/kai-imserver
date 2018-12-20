@@ -27,12 +27,12 @@ public class WebSocketController {
     /**
      * 数据加密密匙
      */
-    @Value("${yai.service.websocket.secretKey}")
+    @Value("${kai.service.websocket.secretKey}")
     private String secretKey;
     /**
      * 数据签名密匙
      */
-    @Value("${yai.service.websocket.signKey}")
+    @Value("${kai.service.websocket.signKey}")
     private String signKey;
 
     /**

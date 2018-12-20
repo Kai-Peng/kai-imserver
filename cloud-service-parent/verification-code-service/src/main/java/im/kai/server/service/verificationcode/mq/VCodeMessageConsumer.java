@@ -25,7 +25,7 @@ public class VCodeMessageConsumer {
     /**
      * 消息模板
      */
-    @Value("${yai.service.sms.vcode-message}")
+    @Value("${kai.service.sms.vcode-message}")
     private String vcodeMessage;
     /**
      * 接收到mq消息

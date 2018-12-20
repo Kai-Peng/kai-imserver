@@ -10,6 +10,6 @@ public class TokenCacheUtils {
      * @return
      */
     public static String getKey(String token){
-        return "yai/token/" + token;
+        return "kai/token/" + token;
     }
 }

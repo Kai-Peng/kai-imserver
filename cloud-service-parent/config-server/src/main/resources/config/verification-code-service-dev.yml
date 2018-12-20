@@ -44,7 +44,7 @@ spring:
         max-wait: 1000 # 连接池最大阻塞等待时间（使用负值表示没有限制）
         min-idle: 5 # 连接池中的最小空闲连接
         timeout: 0 # 连接超时时间（毫秒）
-yai:
+kai:
   service:
     sms:
       vcode-message: "Your verification code: %s"
@@ -61,4 +61,4 @@ yai:
       nexmo:
         apiKey: 02a1405b
         apiSecret: bN4PRBzCiQ7ITgb7
-        from: YAI.im
+        from: kai.im

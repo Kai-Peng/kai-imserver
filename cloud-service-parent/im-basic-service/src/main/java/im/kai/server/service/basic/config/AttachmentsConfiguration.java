@@ -19,7 +19,7 @@ public class AttachmentsConfiguration {
      */
     @Bean
     @Qualifier("avatarStorageConfiguration")
-    @ConfigurationProperties(prefix = "yai.service.attachments.avatar")
+    @ConfigurationProperties(prefix = "kai.service.attachments.avatar")
     public CloudStorageProperties avatarStorageConfiguration(){
         return new CloudStorageProperties();
     }
@@ -29,7 +29,7 @@ public class AttachmentsConfiguration {
      */
     @Bean
     @Qualifier("imageStorageConfiguration")
-    @ConfigurationProperties(prefix = "yai.service.attachments.image")
+    @ConfigurationProperties(prefix = "kai.service.attachments.image")
     public CloudStorageProperties imageStorageConfiguration(){
         return new CloudStorageProperties();
     }
@@ -39,7 +39,7 @@ public class AttachmentsConfiguration {
      */
     @Bean
     @Qualifier("videoStorageConfiguration")
-    @ConfigurationProperties(prefix = "yai.service.attachments.video")
+    @ConfigurationProperties(prefix = "kai.service.attachments.video")
     public CloudStorageProperties videoStorageConfiguration(){
         return new CloudStorageProperties();
     }
@@ -50,7 +50,7 @@ public class AttachmentsConfiguration {
      */
     @Bean
     @Qualifier("fileStorageConfiguration")
-    @ConfigurationProperties(prefix = "yai.service.attachments.file")
+    @ConfigurationProperties(prefix = "kai.service.attachments.file")
     public CloudStorageProperties fileStorageConfiguration(){
         return new CloudStorageProperties();
     }
@@ -60,7 +60,7 @@ public class AttachmentsConfiguration {
      */
     @Bean
     @Qualifier("audioStorageConfiguration")
-    @ConfigurationProperties(prefix = "yai.service.attachments.audio")
+    @ConfigurationProperties(prefix = "kai.service.attachments.audio")
     public CloudStorageProperties audioStorageConfiguration(){
         return new CloudStorageProperties();
     }

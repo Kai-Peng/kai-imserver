@@ -9,7 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8900/eureka/
-yai:
+kai:
   service:
     #WebRTC 附件云存储配置信息
     attachments:

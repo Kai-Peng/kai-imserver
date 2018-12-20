@@ -15,7 +15,7 @@ public final class WebSocketProtos {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface WebSocketMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.WebSocketMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.WebSocketMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -41,7 +41,7 @@ public final class WebSocketProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+     * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
      */
     int getTypeValue();
     /**
@@ -49,7 +49,7 @@ public final class WebSocketProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+     * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Type getType();
 
@@ -63,11 +63,11 @@ public final class WebSocketProtos {
     com.google.protobuf.ByteString getData();
   }
   /**
-   * Protobuf type {@code im.yai.WebSocketMessage}
+   * Protobuf type {@code im.kai.WebSocketMessage}
    */
   public  static final class WebSocketMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.WebSocketMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.WebSocketMessage)
       WebSocketMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use WebSocketMessage.newBuilder() to construct.
@@ -147,19 +147,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_WebSocketMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_WebSocketMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_WebSocketMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_WebSocketMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.WebSocketMessage.Type}
+     * Protobuf enum {@code im.kai.WebSocketMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -397,7 +397,7 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.WebSocketMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.WebSocketMessage.Type)
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -433,7 +433,7 @@ public final class WebSocketProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+     * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -443,7 +443,7 @@ public final class WebSocketProtos {
      *消息类型
      * </pre>
      *
-     * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+     * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -657,21 +657,21 @@ public final class WebSocketProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code im.yai.WebSocketMessage}
+     * Protobuf type {@code im.kai.WebSocketMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.WebSocketMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.WebSocketMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_WebSocketMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_WebSocketMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_WebSocketMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_WebSocketMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Builder.class);
       }
@@ -708,7 +708,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_WebSocketMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_WebSocketMessage_descriptor;
       }
 
       @java.lang.Override
@@ -903,7 +903,7 @@ public final class WebSocketProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+       * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -913,7 +913,7 @@ public final class WebSocketProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+       * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -925,7 +925,7 @@ public final class WebSocketProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+       * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -937,7 +937,7 @@ public final class WebSocketProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+       * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage.Type value) {
         if (value == null) {
@@ -953,7 +953,7 @@ public final class WebSocketProtos {
        *消息类型
        * </pre>
        *
-       * <code>.im.yai.WebSocketMessage.Type type = 3;</code>
+       * <code>.im.kai.WebSocketMessage.Type type = 3;</code>
        */
       public Builder clearType() {
         
@@ -1015,10 +1015,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.WebSocketMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.WebSocketMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.WebSocketMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.WebSocketMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.WebSocketMessage();
@@ -1056,7 +1056,7 @@ public final class WebSocketProtos {
   }
 
   public interface UserOfflineMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.UserOfflineMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.UserOfflineMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1064,7 +1064,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+     * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
      */
     int getReasonValue();
     /**
@@ -1072,7 +1072,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+     * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Reason getReason();
 
@@ -1117,11 +1117,11 @@ public final class WebSocketProtos {
    *用户被踢下线的消息
    * </pre>
    *
-   * Protobuf type {@code im.yai.UserOfflineMessage}
+   * Protobuf type {@code im.kai.UserOfflineMessage}
    */
   public  static final class UserOfflineMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.UserOfflineMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.UserOfflineMessage)
       UserOfflineMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use UserOfflineMessage.newBuilder() to construct.
@@ -1197,19 +1197,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserOfflineMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserOfflineMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserOfflineMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserOfflineMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.UserOfflineMessage.Reason}
+     * Protobuf enum {@code im.kai.UserOfflineMessage.Reason}
      */
     public enum Reason
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -1362,7 +1362,7 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.UserOfflineMessage.Reason)
+      // @@protoc_insertion_point(enum_scope:im.kai.UserOfflineMessage.Reason)
     }
 
     public static final int REASON_FIELD_NUMBER = 1;
@@ -1372,7 +1372,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+     * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
      */
     public int getReasonValue() {
       return reason_;
@@ -1382,7 +1382,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+     * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Reason getReason() {
       @SuppressWarnings("deprecation")
@@ -1654,21 +1654,21 @@ public final class WebSocketProtos {
      *用户被踢下线的消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.UserOfflineMessage}
+     * Protobuf type {@code im.kai.UserOfflineMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.UserOfflineMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.UserOfflineMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserOfflineMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserOfflineMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserOfflineMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserOfflineMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Builder.class);
       }
@@ -1703,7 +1703,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserOfflineMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserOfflineMessage_descriptor;
       }
 
       @java.lang.Override
@@ -1820,7 +1820,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+       * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
        */
       public int getReasonValue() {
         return reason_;
@@ -1830,7 +1830,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+       * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
        */
       public Builder setReasonValue(int value) {
         reason_ = value;
@@ -1842,7 +1842,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+       * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Reason getReason() {
         @SuppressWarnings("deprecation")
@@ -1854,7 +1854,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+       * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
        */
       public Builder setReason(im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage.Reason value) {
         if (value == null) {
@@ -1870,7 +1870,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserOfflineMessage.Reason reason = 1;</code>
+       * <code>.im.kai.UserOfflineMessage.Reason reason = 1;</code>
        */
       public Builder clearReason() {
         
@@ -2069,10 +2069,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.UserOfflineMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.UserOfflineMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.UserOfflineMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.UserOfflineMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.UserOfflineMessage();
@@ -2110,7 +2110,7 @@ public final class WebSocketProtos {
   }
 
   public interface SystemNoticeMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.AppVersionMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.AppVersionMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2118,7 +2118,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+     * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -2126,7 +2126,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+     * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Type getType();
 
@@ -2144,11 +2144,11 @@ public final class WebSocketProtos {
    *系统通知消息
    * </pre>
    *
-   * Protobuf type {@code im.yai.AppVersionMessage}
+   * Protobuf type {@code im.kai.AppVersionMessage}
    */
   public  static final class SystemNoticeMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.AppVersionMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.AppVersionMessage)
       SystemNoticeMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use AppVersionMessage.newBuilder() to construct.
@@ -2216,19 +2216,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.AppVersionMessage.Type}
+     * Protobuf enum {@code im.kai.AppVersionMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -2322,11 +2322,11 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.AppVersionMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.AppVersionMessage.Type)
     }
 
     public interface AppVersionMessageOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.AppVersionMessage.AppVersionMessage)
+        // @@protoc_insertion_point(interface_extends:im.kai.AppVersionMessage.AppVersionMessage)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -2379,7 +2379,7 @@ public final class WebSocketProtos {
        *下载模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
        */
       int getDownloadModeValue();
       /**
@@ -2387,7 +2387,7 @@ public final class WebSocketProtos {
        *下载模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getDownloadMode();
 
@@ -2396,7 +2396,7 @@ public final class WebSocketProtos {
        *更新模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
        */
       int getUpdateModeValue();
       /**
@@ -2404,7 +2404,7 @@ public final class WebSocketProtos {
        *更新模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getUpdateMode();
     }
@@ -2413,11 +2413,11 @@ public final class WebSocketProtos {
      *app版本更新消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.AppVersionMessage.AppVersionMessage}
+     * Protobuf type {@code im.kai.AppVersionMessage.AppVersionMessage}
      */
     public  static final class AppVersionMessage extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.AppVersionMessage.AppVersionMessage)
+        // @@protoc_insertion_point(message_implements:im.kai.AppVersionMessage.AppVersionMessage)
         AppVersionMessageOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use AppVersionMessage.newBuilder() to construct.
@@ -2506,19 +2506,19 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Builder.class);
       }
 
       /**
-       * Protobuf enum {@code im.yai.AppVersionMessage.AppVersionMessage.Mode}
+       * Protobuf enum {@code im.kai.AppVersionMessage.AppVersionMessage.Mode}
        */
       public enum Mode
           implements com.google.protobuf.ProtocolMessageEnum {
@@ -2671,7 +2671,7 @@ public final class WebSocketProtos {
           this.value = value;
         }
 
-        // @@protoc_insertion_point(enum_scope:im.yai.AppVersionMessage.AppVersionMessage.Mode)
+        // @@protoc_insertion_point(enum_scope:im.kai.AppVersionMessage.AppVersionMessage.Mode)
       }
 
       public static final int VERSION_FIELD_NUMBER = 1;
@@ -2778,7 +2778,7 @@ public final class WebSocketProtos {
        *下载模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
        */
       public int getDownloadModeValue() {
         return downloadMode_;
@@ -2788,7 +2788,7 @@ public final class WebSocketProtos {
        *下载模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getDownloadMode() {
         @SuppressWarnings("deprecation")
@@ -2803,7 +2803,7 @@ public final class WebSocketProtos {
        *更新模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
        */
       public int getUpdateModeValue() {
         return updateMode_;
@@ -2813,7 +2813,7 @@ public final class WebSocketProtos {
        *更新模式
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+       * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getUpdateMode() {
         @SuppressWarnings("deprecation")
@@ -3022,21 +3022,21 @@ public final class WebSocketProtos {
        *app版本更新消息
        * </pre>
        *
-       * Protobuf type {@code im.yai.AppVersionMessage.AppVersionMessage}
+       * Protobuf type {@code im.kai.AppVersionMessage.AppVersionMessage}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.AppVersionMessage.AppVersionMessage)
+          // @@protoc_insertion_point(builder_implements:im.kai.AppVersionMessage.AppVersionMessage)
           im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessageOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Builder.class);
         }
@@ -3075,7 +3075,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor;
         }
 
         @java.lang.Override
@@ -3419,7 +3419,7 @@ public final class WebSocketProtos {
          *下载模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
          */
         public int getDownloadModeValue() {
           return downloadMode_;
@@ -3429,7 +3429,7 @@ public final class WebSocketProtos {
          *下载模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
          */
         public Builder setDownloadModeValue(int value) {
           downloadMode_ = value;
@@ -3441,7 +3441,7 @@ public final class WebSocketProtos {
          *下载模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getDownloadMode() {
           @SuppressWarnings("deprecation")
@@ -3453,7 +3453,7 @@ public final class WebSocketProtos {
          *下载模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
          */
         public Builder setDownloadMode(im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode value) {
           if (value == null) {
@@ -3469,7 +3469,7 @@ public final class WebSocketProtos {
          *下载模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode download_mode = 4;</code>
          */
         public Builder clearDownloadMode() {
           
@@ -3484,7 +3484,7 @@ public final class WebSocketProtos {
          *更新模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
          */
         public int getUpdateModeValue() {
           return updateMode_;
@@ -3494,7 +3494,7 @@ public final class WebSocketProtos {
          *更新模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
          */
         public Builder setUpdateModeValue(int value) {
           updateMode_ = value;
@@ -3506,7 +3506,7 @@ public final class WebSocketProtos {
          *更新模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode getUpdateMode() {
           @SuppressWarnings("deprecation")
@@ -3518,7 +3518,7 @@ public final class WebSocketProtos {
          *更新模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
          */
         public Builder setUpdateMode(im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage.Mode value) {
           if (value == null) {
@@ -3534,7 +3534,7 @@ public final class WebSocketProtos {
          *更新模式
          * </pre>
          *
-         * <code>.im.yai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
+         * <code>.im.kai.AppVersionMessage.AppVersionMessage.Mode update_mode = 5;</code>
          */
         public Builder clearUpdateMode() {
           
@@ -3555,10 +3555,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.AppVersionMessage.AppVersionMessage)
+        // @@protoc_insertion_point(builder_scope:im.kai.AppVersionMessage.AppVersionMessage)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.AppVersionMessage.AppVersionMessage)
+      // @@protoc_insertion_point(class_scope:im.kai.AppVersionMessage.AppVersionMessage)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.AppVersionMessage();
@@ -3602,7 +3602,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+     * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -3612,7 +3612,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+     * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -3804,21 +3804,21 @@ public final class WebSocketProtos {
      *系统通知消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.AppVersionMessage}
+     * Protobuf type {@code im.kai.AppVersionMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.AppVersionMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.AppVersionMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Builder.class);
       }
@@ -3851,7 +3851,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_SystemNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_SystemNoticeMessage_descriptor;
       }
 
       @java.lang.Override
@@ -3962,7 +3962,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+       * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -3972,7 +3972,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+       * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -3984,7 +3984,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+       * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -3996,7 +3996,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+       * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage.Type value) {
         if (value == null) {
@@ -4012,7 +4012,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.AppVersionMessage.Type type = 1;</code>
+       * <code>.im.kai.AppVersionMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -4074,10 +4074,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.AppVersionMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.AppVersionMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.AppVersionMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.AppVersionMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.SystemNoticeMessage();
@@ -4115,7 +4115,7 @@ public final class WebSocketProtos {
   }
 
   public interface MessageNoticeMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.MessageNoticeMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.MessageNoticeMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4123,7 +4123,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -4131,7 +4131,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Type getType();
 
@@ -4248,11 +4248,11 @@ public final class WebSocketProtos {
    *消息相关的通知消息
    * </pre>
    *
-   * Protobuf type {@code im.yai.MessageNoticeMessage}
+   * Protobuf type {@code im.kai.MessageNoticeMessage}
    */
   public  static final class MessageNoticeMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.MessageNoticeMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.MessageNoticeMessage)
       MessageNoticeMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use MessageNoticeMessage.newBuilder() to construct.
@@ -4366,19 +4366,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_MessageNoticeMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_MessageNoticeMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_MessageNoticeMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_MessageNoticeMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.MessageNoticeMessage.Type}
+     * Protobuf enum {@code im.kai.MessageNoticeMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -4531,7 +4531,7 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.MessageNoticeMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.MessageNoticeMessage.Type)
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
@@ -4541,7 +4541,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -4551,7 +4551,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -5025,21 +5025,21 @@ public final class WebSocketProtos {
      *消息相关的通知消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.MessageNoticeMessage}
+     * Protobuf type {@code im.kai.MessageNoticeMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.MessageNoticeMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.MessageNoticeMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_MessageNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_MessageNoticeMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_MessageNoticeMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_MessageNoticeMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Builder.class);
       }
@@ -5086,7 +5086,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_MessageNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_MessageNoticeMessage_descriptor;
       }
 
       @java.lang.Override
@@ -5229,7 +5229,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -5239,7 +5239,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -5251,7 +5251,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -5263,7 +5263,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage.Type value) {
         if (value == null) {
@@ -5279,7 +5279,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.MessageNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.MessageNoticeMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -5808,10 +5808,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.MessageNoticeMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.MessageNoticeMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.MessageNoticeMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.MessageNoticeMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.MessageNoticeMessage();
@@ -5849,7 +5849,7 @@ public final class WebSocketProtos {
   }
 
   public interface UserNoticeMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.UserNoticeMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.UserNoticeMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -5857,7 +5857,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -5865,7 +5865,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Type getType();
 
@@ -5883,11 +5883,11 @@ public final class WebSocketProtos {
    *用户相关的通知消息
    * </pre>
    *
-   * Protobuf type {@code im.yai.UserNoticeMessage}
+   * Protobuf type {@code im.kai.UserNoticeMessage}
    */
   public  static final class UserNoticeMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.UserNoticeMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.UserNoticeMessage)
       UserNoticeMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use UserNoticeMessage.newBuilder() to construct.
@@ -5955,19 +5955,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserNoticeMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserNoticeMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserNoticeMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserNoticeMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.UserNoticeMessage.Type}
+     * Protobuf enum {@code im.kai.UserNoticeMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -6086,7 +6086,7 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.UserNoticeMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.UserNoticeMessage.Type)
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
@@ -6096,7 +6096,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -6106,7 +6106,7 @@ public final class WebSocketProtos {
      *被踢的原因
      * </pre>
      *
-     * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -6298,21 +6298,21 @@ public final class WebSocketProtos {
      *用户相关的通知消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.UserNoticeMessage}
+     * Protobuf type {@code im.kai.UserNoticeMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.UserNoticeMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.UserNoticeMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserNoticeMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserNoticeMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserNoticeMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Builder.class);
       }
@@ -6345,7 +6345,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_UserNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_UserNoticeMessage_descriptor;
       }
 
       @java.lang.Override
@@ -6456,7 +6456,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -6466,7 +6466,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -6478,7 +6478,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -6490,7 +6490,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage.Type value) {
         if (value == null) {
@@ -6506,7 +6506,7 @@ public final class WebSocketProtos {
        *被踢的原因
        * </pre>
        *
-       * <code>.im.yai.UserNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.UserNoticeMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -6568,10 +6568,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.UserNoticeMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.UserNoticeMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.UserNoticeMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.UserNoticeMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.UserNoticeMessage();
@@ -6609,7 +6609,7 @@ public final class WebSocketProtos {
   }
 
   public interface RoomNoticeMessageOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage)
+      // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -6617,7 +6617,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
      */
     int getTypeValue();
     /**
@@ -6625,7 +6625,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
      */
     im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Type getType();
 
@@ -6670,11 +6670,11 @@ public final class WebSocketProtos {
    *群通知消息
    * </pre>
    *
-   * Protobuf type {@code im.yai.RoomNoticeMessage}
+   * Protobuf type {@code im.kai.RoomNoticeMessage}
    */
   public  static final class RoomNoticeMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage)
+      // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage)
       RoomNoticeMessageOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use RoomNoticeMessage.newBuilder() to construct.
@@ -6755,19 +6755,19 @@ public final class WebSocketProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_descriptor;
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_fieldAccessorTable
+      return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code im.yai.RoomNoticeMessage.Type}
+     * Protobuf enum {@code im.kai.RoomNoticeMessage.Type}
      */
     public enum Type
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -6954,11 +6954,11 @@ public final class WebSocketProtos {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:im.yai.RoomNoticeMessage.Type)
+      // @@protoc_insertion_point(enum_scope:im.kai.RoomNoticeMessage.Type)
     }
 
     public interface UserDataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage.UserData)
+        // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage.UserData)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -7011,11 +7011,11 @@ public final class WebSocketProtos {
      *用户数据
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage.UserData}
+     * Protobuf type {@code im.kai.RoomNoticeMessage.UserData}
      */
     public  static final class UserData extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage.UserData)
+        // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage.UserData)
         UserDataOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use UserData.newBuilder() to construct.
@@ -7090,13 +7090,13 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_UserData_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_UserData_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_UserData_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_UserData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder.class);
       }
@@ -7379,21 +7379,21 @@ public final class WebSocketProtos {
        *用户数据
        * </pre>
        *
-       * Protobuf type {@code im.yai.RoomNoticeMessage.UserData}
+       * Protobuf type {@code im.kai.RoomNoticeMessage.UserData}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage.UserData)
+          // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage.UserData)
           im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_UserData_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_UserData_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_UserData_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_UserData_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder.class);
         }
@@ -7428,7 +7428,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_UserData_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_UserData_descriptor;
         }
 
         @java.lang.Override
@@ -7770,10 +7770,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage.UserData)
+        // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage.UserData)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage.UserData)
+      // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage.UserData)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData();
@@ -7811,7 +7811,7 @@ public final class WebSocketProtos {
     }
 
     public interface JoinMessageOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage.JoinMessage)
+        // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage.JoinMessage)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -7819,7 +7819,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       boolean hasInviter();
       /**
@@ -7827,7 +7827,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getInviter();
       /**
@@ -7835,7 +7835,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getInviterOrBuilder();
 
@@ -7844,7 +7844,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData>
           getJoinUserList();
@@ -7853,7 +7853,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getJoinUser(int index);
       /**
@@ -7861,7 +7861,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       int getJoinUserCount();
       /**
@@ -7869,7 +7869,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
           getJoinUserOrBuilderList();
@@ -7878,7 +7878,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getJoinUserOrBuilder(
           int index);
@@ -7888,11 +7888,11 @@ public final class WebSocketProtos {
      *加人消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage.JoinMessage}
+     * Protobuf type {@code im.kai.RoomNoticeMessage.JoinMessage}
      */
     public  static final class JoinMessage extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage.JoinMessage)
+        // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage.JoinMessage)
         JoinMessageOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use JoinMessage.newBuilder() to construct.
@@ -7973,13 +7973,13 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_JoinMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_JoinMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage.Builder.class);
       }
@@ -7992,7 +7992,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       public boolean hasInviter() {
         return inviter_ != null;
@@ -8002,7 +8002,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getInviter() {
         return inviter_ == null ? im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.getDefaultInstance() : inviter_;
@@ -8012,7 +8012,7 @@ public final class WebSocketProtos {
        *邀请人
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getInviterOrBuilder() {
         return getInviter();
@@ -8025,7 +8025,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> getJoinUserList() {
         return joinUser_;
@@ -8035,7 +8035,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       public java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
           getJoinUserOrBuilderList() {
@@ -8046,7 +8046,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       public int getJoinUserCount() {
         return joinUser_.size();
@@ -8056,7 +8056,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getJoinUser(int index) {
         return joinUser_.get(index);
@@ -8066,7 +8066,7 @@ public final class WebSocketProtos {
        *加入者列表
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getJoinUserOrBuilder(
           int index) {
@@ -8252,21 +8252,21 @@ public final class WebSocketProtos {
        *加人消息
        * </pre>
        *
-       * Protobuf type {@code im.yai.RoomNoticeMessage.JoinMessage}
+       * Protobuf type {@code im.kai.RoomNoticeMessage.JoinMessage}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage.JoinMessage)
+          // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage.JoinMessage)
           im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessageOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_JoinMessage_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_JoinMessage_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage.Builder.class);
         }
@@ -8308,7 +8308,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor;
         }
 
         @java.lang.Override
@@ -8460,7 +8460,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public boolean hasInviter() {
           return inviterBuilder_ != null || inviter_ != null;
@@ -8470,7 +8470,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getInviter() {
           if (inviterBuilder_ == null) {
@@ -8484,7 +8484,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public Builder setInviter(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (inviterBuilder_ == null) {
@@ -8504,7 +8504,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public Builder setInviter(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -8522,7 +8522,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public Builder mergeInviter(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (inviterBuilder_ == null) {
@@ -8544,7 +8544,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public Builder clearInviter() {
           if (inviterBuilder_ == null) {
@@ -8562,7 +8562,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getInviterBuilder() {
           
@@ -8574,7 +8574,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getInviterOrBuilder() {
           if (inviterBuilder_ != null) {
@@ -8589,7 +8589,7 @@ public final class WebSocketProtos {
          *邀请人
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData inviter = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData inviter = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
@@ -8622,7 +8622,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> getJoinUserList() {
           if (joinUserBuilder_ == null) {
@@ -8636,7 +8636,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public int getJoinUserCount() {
           if (joinUserBuilder_ == null) {
@@ -8650,7 +8650,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getJoinUser(int index) {
           if (joinUserBuilder_ == null) {
@@ -8664,7 +8664,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder setJoinUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
@@ -8685,7 +8685,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder setJoinUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -8703,7 +8703,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder addJoinUser(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (joinUserBuilder_ == null) {
@@ -8723,7 +8723,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder addJoinUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
@@ -8744,7 +8744,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder addJoinUser(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -8762,7 +8762,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder addJoinUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -8780,7 +8780,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder addAllJoinUser(
             java.lang.Iterable<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> values) {
@@ -8799,7 +8799,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder clearJoinUser() {
           if (joinUserBuilder_ == null) {
@@ -8816,7 +8816,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public Builder removeJoinUser(int index) {
           if (joinUserBuilder_ == null) {
@@ -8833,7 +8833,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getJoinUserBuilder(
             int index) {
@@ -8844,7 +8844,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getJoinUserOrBuilder(
             int index) {
@@ -8858,7 +8858,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
              getJoinUserOrBuilderList() {
@@ -8873,7 +8873,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder addJoinUserBuilder() {
           return getJoinUserFieldBuilder().addBuilder(
@@ -8884,7 +8884,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder addJoinUserBuilder(
             int index) {
@@ -8896,7 +8896,7 @@ public final class WebSocketProtos {
          *加入者列表
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData join_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData join_user = 2;</code>
          */
         public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder>
              getJoinUserBuilderList() {
@@ -8929,10 +8929,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage.JoinMessage)
+        // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage.JoinMessage)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage.JoinMessage)
+      // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage.JoinMessage)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.JoinMessage();
@@ -8970,7 +8970,7 @@ public final class WebSocketProtos {
     }
 
     public interface DeleteMessageOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage.DeleteMessage)
+        // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage.DeleteMessage)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -8978,7 +8978,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       boolean hasOperator();
       /**
@@ -8986,7 +8986,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator();
       /**
@@ -8994,7 +8994,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder();
 
@@ -9003,7 +9003,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData>
           getDeletedUserList();
@@ -9012,7 +9012,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getDeletedUser(int index);
       /**
@@ -9020,7 +9020,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       int getDeletedUserCount();
       /**
@@ -9028,7 +9028,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
           getDeletedUserOrBuilderList();
@@ -9037,7 +9037,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getDeletedUserOrBuilder(
           int index);
@@ -9047,11 +9047,11 @@ public final class WebSocketProtos {
      *踢人消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage.DeleteMessage}
+     * Protobuf type {@code im.kai.RoomNoticeMessage.DeleteMessage}
      */
     public  static final class DeleteMessage extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage.DeleteMessage)
+        // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage.DeleteMessage)
         DeleteMessageOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use DeleteMessage.newBuilder() to construct.
@@ -9132,13 +9132,13 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage.Builder.class);
       }
@@ -9151,7 +9151,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public boolean hasOperator() {
         return operator_ != null;
@@ -9161,7 +9161,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator() {
         return operator_ == null ? im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.getDefaultInstance() : operator_;
@@ -9171,7 +9171,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder() {
         return getOperator();
@@ -9184,7 +9184,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> getDeletedUserList() {
         return deletedUser_;
@@ -9194,7 +9194,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       public java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
           getDeletedUserOrBuilderList() {
@@ -9205,7 +9205,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       public int getDeletedUserCount() {
         return deletedUser_.size();
@@ -9215,7 +9215,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getDeletedUser(int index) {
         return deletedUser_.get(index);
@@ -9225,7 +9225,7 @@ public final class WebSocketProtos {
        *被删除者
        * </pre>
        *
-       * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+       * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getDeletedUserOrBuilder(
           int index) {
@@ -9411,21 +9411,21 @@ public final class WebSocketProtos {
        *踢人消息
        * </pre>
        *
-       * Protobuf type {@code im.yai.RoomNoticeMessage.DeleteMessage}
+       * Protobuf type {@code im.kai.RoomNoticeMessage.DeleteMessage}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage.DeleteMessage)
+          // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage.DeleteMessage)
           im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessageOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage.Builder.class);
         }
@@ -9467,7 +9467,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor;
         }
 
         @java.lang.Override
@@ -9619,7 +9619,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public boolean hasOperator() {
           return operatorBuilder_ != null || operator_ != null;
@@ -9629,7 +9629,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator() {
           if (operatorBuilder_ == null) {
@@ -9643,7 +9643,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder setOperator(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (operatorBuilder_ == null) {
@@ -9663,7 +9663,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder setOperator(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -9681,7 +9681,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder mergeOperator(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (operatorBuilder_ == null) {
@@ -9703,7 +9703,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder clearOperator() {
           if (operatorBuilder_ == null) {
@@ -9721,7 +9721,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getOperatorBuilder() {
           
@@ -9733,7 +9733,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder() {
           if (operatorBuilder_ != null) {
@@ -9748,7 +9748,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
@@ -9781,7 +9781,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> getDeletedUserList() {
           if (deletedUserBuilder_ == null) {
@@ -9795,7 +9795,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public int getDeletedUserCount() {
           if (deletedUserBuilder_ == null) {
@@ -9809,7 +9809,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getDeletedUser(int index) {
           if (deletedUserBuilder_ == null) {
@@ -9823,7 +9823,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder setDeletedUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
@@ -9844,7 +9844,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder setDeletedUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -9862,7 +9862,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder addDeletedUser(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (deletedUserBuilder_ == null) {
@@ -9882,7 +9882,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder addDeletedUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
@@ -9903,7 +9903,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder addDeletedUser(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -9921,7 +9921,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder addDeletedUser(
             int index, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -9939,7 +9939,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder addAllDeletedUser(
             java.lang.Iterable<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData> values) {
@@ -9958,7 +9958,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder clearDeletedUser() {
           if (deletedUserBuilder_ == null) {
@@ -9975,7 +9975,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public Builder removeDeletedUser(int index) {
           if (deletedUserBuilder_ == null) {
@@ -9992,7 +9992,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getDeletedUserBuilder(
             int index) {
@@ -10003,7 +10003,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getDeletedUserOrBuilder(
             int index) {
@@ -10017,7 +10017,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public java.util.List<? extends im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
              getDeletedUserOrBuilderList() {
@@ -10032,7 +10032,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder addDeletedUserBuilder() {
           return getDeletedUserFieldBuilder().addBuilder(
@@ -10043,7 +10043,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder addDeletedUserBuilder(
             int index) {
@@ -10055,7 +10055,7 @@ public final class WebSocketProtos {
          *被删除者
          * </pre>
          *
-         * <code>repeated .im.yai.RoomNoticeMessage.UserData deleted_user = 2;</code>
+         * <code>repeated .im.kai.RoomNoticeMessage.UserData deleted_user = 2;</code>
          */
         public java.util.List<im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder>
              getDeletedUserBuilderList() {
@@ -10088,10 +10088,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage.DeleteMessage)
+        // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage.DeleteMessage)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage.DeleteMessage)
+      // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage.DeleteMessage)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DeleteMessage();
@@ -10129,7 +10129,7 @@ public final class WebSocketProtos {
     }
 
     public interface TransferMessageOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage.TransferMessage)
+        // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage.TransferMessage)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -10137,7 +10137,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       boolean hasOperator();
       /**
@@ -10145,7 +10145,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator();
       /**
@@ -10153,7 +10153,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder();
 
@@ -10162,7 +10162,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       boolean hasOwner();
       /**
@@ -10170,7 +10170,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOwner();
       /**
@@ -10178,7 +10178,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOwnerOrBuilder();
     }
@@ -10187,11 +10187,11 @@ public final class WebSocketProtos {
      *群主转让消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage.TransferMessage}
+     * Protobuf type {@code im.kai.RoomNoticeMessage.TransferMessage}
      */
     public  static final class TransferMessage extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage.TransferMessage)
+        // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage.TransferMessage)
         TransferMessageOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use TransferMessage.newBuilder() to construct.
@@ -10272,13 +10272,13 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_TransferMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_TransferMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage.Builder.class);
       }
@@ -10290,7 +10290,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public boolean hasOperator() {
         return operator_ != null;
@@ -10300,7 +10300,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator() {
         return operator_ == null ? im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.getDefaultInstance() : operator_;
@@ -10310,7 +10310,7 @@ public final class WebSocketProtos {
        *操作者
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder() {
         return getOperator();
@@ -10323,7 +10323,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       public boolean hasOwner() {
         return owner_ != null;
@@ -10333,7 +10333,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOwner() {
         return owner_ == null ? im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.getDefaultInstance() : owner_;
@@ -10343,7 +10343,7 @@ public final class WebSocketProtos {
        *新群主
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+       * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOwnerOrBuilder() {
         return getOwner();
@@ -10531,21 +10531,21 @@ public final class WebSocketProtos {
        *群主转让消息
        * </pre>
        *
-       * Protobuf type {@code im.yai.RoomNoticeMessage.TransferMessage}
+       * Protobuf type {@code im.kai.RoomNoticeMessage.TransferMessage}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage.TransferMessage)
+          // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage.TransferMessage)
           im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessageOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_TransferMessage_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_TransferMessage_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage.Builder.class);
         }
@@ -10586,7 +10586,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor;
         }
 
         @java.lang.Override
@@ -10707,7 +10707,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public boolean hasOperator() {
           return operatorBuilder_ != null || operator_ != null;
@@ -10717,7 +10717,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOperator() {
           if (operatorBuilder_ == null) {
@@ -10731,7 +10731,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder setOperator(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (operatorBuilder_ == null) {
@@ -10751,7 +10751,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder setOperator(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -10769,7 +10769,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder mergeOperator(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (operatorBuilder_ == null) {
@@ -10791,7 +10791,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public Builder clearOperator() {
           if (operatorBuilder_ == null) {
@@ -10809,7 +10809,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getOperatorBuilder() {
           
@@ -10821,7 +10821,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOperatorOrBuilder() {
           if (operatorBuilder_ != null) {
@@ -10836,7 +10836,7 @@ public final class WebSocketProtos {
          *操作者
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData operator = 1;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData operator = 1;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
@@ -10860,7 +10860,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public boolean hasOwner() {
           return ownerBuilder_ != null || owner_ != null;
@@ -10870,7 +10870,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData getOwner() {
           if (ownerBuilder_ == null) {
@@ -10884,7 +10884,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public Builder setOwner(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (ownerBuilder_ == null) {
@@ -10904,7 +10904,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public Builder setOwner(
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder builderForValue) {
@@ -10922,7 +10922,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public Builder mergeOwner(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData value) {
           if (ownerBuilder_ == null) {
@@ -10944,7 +10944,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public Builder clearOwner() {
           if (ownerBuilder_ == null) {
@@ -10962,7 +10962,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder getOwnerBuilder() {
           
@@ -10974,7 +10974,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder getOwnerOrBuilder() {
           if (ownerBuilder_ != null) {
@@ -10989,7 +10989,7 @@ public final class WebSocketProtos {
          *新群主
          * </pre>
          *
-         * <code>.im.yai.RoomNoticeMessage.UserData owner = 2;</code>
+         * <code>.im.kai.RoomNoticeMessage.UserData owner = 2;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserData.Builder, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.UserDataOrBuilder>
@@ -11017,10 +11017,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage.TransferMessage)
+        // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage.TransferMessage)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage.TransferMessage)
+      // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage.TransferMessage)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.TransferMessage();
@@ -11058,7 +11058,7 @@ public final class WebSocketProtos {
     }
 
     public interface DataUpdatedMessageOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:im.yai.RoomNoticeMessage.DataUpdatedMessage)
+        // @@protoc_insertion_point(interface_extends:im.kai.RoomNoticeMessage.DataUpdatedMessage)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -11084,11 +11084,11 @@ public final class WebSocketProtos {
      *数据更新消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage.DataUpdatedMessage}
+     * Protobuf type {@code im.kai.RoomNoticeMessage.DataUpdatedMessage}
      */
     public  static final class DataUpdatedMessage extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:im.yai.RoomNoticeMessage.DataUpdatedMessage)
+        // @@protoc_insertion_point(message_implements:im.kai.RoomNoticeMessage.DataUpdatedMessage)
         DataUpdatedMessageOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use DataUpdatedMessage.newBuilder() to construct.
@@ -11155,13 +11155,13 @@ public final class WebSocketProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage.Builder.class);
       }
@@ -11364,21 +11364,21 @@ public final class WebSocketProtos {
        *数据更新消息
        * </pre>
        *
-       * Protobuf type {@code im.yai.RoomNoticeMessage.DataUpdatedMessage}
+       * Protobuf type {@code im.kai.RoomNoticeMessage.DataUpdatedMessage}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage.DataUpdatedMessage)
+          // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage.DataUpdatedMessage)
           im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessageOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage.Builder.class);
         }
@@ -11411,7 +11411,7 @@ public final class WebSocketProtos {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
+          return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
         }
 
         @java.lang.Override
@@ -11610,10 +11610,10 @@ public final class WebSocketProtos {
         }
 
 
-        // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage.DataUpdatedMessage)
+        // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage.DataUpdatedMessage)
       }
 
-      // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage.DataUpdatedMessage)
+      // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage.DataUpdatedMessage)
       private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.DataUpdatedMessage();
@@ -11657,7 +11657,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
@@ -11667,7 +11667,7 @@ public final class WebSocketProtos {
      *类型
      * </pre>
      *
-     * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+     * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
      */
     public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Type getType() {
       @SuppressWarnings("deprecation")
@@ -11936,21 +11936,21 @@ public final class WebSocketProtos {
      *群通知消息
      * </pre>
      *
-     * Protobuf type {@code im.yai.RoomNoticeMessage}
+     * Protobuf type {@code im.kai.RoomNoticeMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:im.yai.RoomNoticeMessage)
+        // @@protoc_insertion_point(builder_implements:im.kai.RoomNoticeMessage)
         im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_fieldAccessorTable
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.class, im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Builder.class);
       }
@@ -11987,7 +11987,7 @@ public final class WebSocketProtos {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_yai_RoomNoticeMessage_descriptor;
+        return im.kai.server.service.message.protocol.WebSocketProtos.internal_static_im_kai_RoomNoticeMessage_descriptor;
       }
 
       @java.lang.Override
@@ -12107,7 +12107,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
        */
       public int getTypeValue() {
         return type_;
@@ -12117,7 +12117,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -12129,7 +12129,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
        */
       public im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Type getType() {
         @SuppressWarnings("deprecation")
@@ -12141,7 +12141,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
        */
       public Builder setType(im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage.Type value) {
         if (value == null) {
@@ -12157,7 +12157,7 @@ public final class WebSocketProtos {
        *类型
        * </pre>
        *
-       * <code>.im.yai.RoomNoticeMessage.Type type = 1;</code>
+       * <code>.im.kai.RoomNoticeMessage.Type type = 1;</code>
        */
       public Builder clearType() {
         
@@ -12346,10 +12346,10 @@ public final class WebSocketProtos {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:im.yai.RoomNoticeMessage)
+      // @@protoc_insertion_point(builder_scope:im.kai.RoomNoticeMessage)
     }
 
-    // @@protoc_insertion_point(class_scope:im.yai.RoomNoticeMessage)
+    // @@protoc_insertion_point(class_scope:im.kai.RoomNoticeMessage)
     private static final im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new im.kai.server.service.message.protocol.WebSocketProtos.RoomNoticeMessage();
@@ -12387,65 +12387,65 @@ public final class WebSocketProtos {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_WebSocketMessage_descriptor;
+    internal_static_im_kai_WebSocketMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_WebSocketMessage_fieldAccessorTable;
+      internal_static_im_kai_WebSocketMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_UserOfflineMessage_descriptor;
+    internal_static_im_kai_UserOfflineMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_UserOfflineMessage_fieldAccessorTable;
+      internal_static_im_kai_UserOfflineMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_SystemNoticeMessage_descriptor;
+    internal_static_im_kai_SystemNoticeMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_SystemNoticeMessage_fieldAccessorTable;
+      internal_static_im_kai_SystemNoticeMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor;
+    internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable;
+      internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_MessageNoticeMessage_descriptor;
+    internal_static_im_kai_MessageNoticeMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_MessageNoticeMessage_fieldAccessorTable;
+      internal_static_im_kai_MessageNoticeMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_UserNoticeMessage_descriptor;
+    internal_static_im_kai_UserNoticeMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_UserNoticeMessage_fieldAccessorTable;
+      internal_static_im_kai_UserNoticeMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_UserData_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_UserData_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_UserData_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_UserData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_JoinMessage_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_JoinMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_TransferMessage_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_TransferMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
+    internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable;
+      internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -12455,32 +12455,32 @@ public final class WebSocketProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026WebSocketmessage.proto\022\006im.yai\"\212\002\n\020Web" +
+      "\n\026WebSocketmessage.proto\022\006im.kai\"\212\002\n\020Web" +
       "SocketMessage\022\n\n\002id\030\001 \001(\004\022\017\n\007version\030\002 \001" +
-      "(\002\022+\n\004type\030\003 \001(\0162\035.im.yai.WebSocketMessa" +
+      "(\002\022+\n\004type\030\003 \001(\0162\035.im.kai.WebSocketMessa" +
       "ge.Type\022\014\n\004data\030\004 \001(\014\"\235\001\n\004Type\022\013\n\007UNKNOW" +
       "N\020\000\022\007\n\003ACK\020\001\022\010\n\004PING\020\002\022\010\n\004PONG\020\003\022\020\n\014USER" +
       "_OFFLINE\020\004\022\021\n\rSYSTEM_NOTICE\020\005\022\020\n\014SEND_ME" +
       "SSAGE\020\006\022\022\n\016MESSAGE_NOTICE\020\007\022\017\n\013USER_NOTI" +
       "CE\020\010\022\017\n\013ROOM_NOTICE\020\t\"\302\001\n\022UserOfflineMes" +
-      "sage\0221\n\006reason\030\001 \001(\0162!.im.yai.UserOfflin" +
+      "sage\0221\n\006reason\030\001 \001(\0162!.im.kai.UserOfflin" +
       "eMessage.Reason\022\023\n\013deivce_name\030\002 \001(\t\022\026\n\016" +
       "remote_address\030\003 \001(\t\"L\n\006Reason\022\013\n\007UNKNOW" +
       "N\020\000\022\n\n\006DEVICE\020\001\022\021\n\rTOKEN_EXPIRED\020\002\022\n\n\006LO" +
       "CKED\020\003\022\n\n\006SYSTEM\020\004\"\351\003\n\023SystemNoticeMessa" +
-      "ge\022.\n\004type\030\001 \001(\0162 .im.yai.SystemNoticeMe" +
+      "ge\022.\n\004type\030\001 \001(\0162 .im.kai.SystemNoticeMe" +
       "ssage.Type\022\014\n\004data\030\002 \001(\014\032\355\002\n\021AppVersionM" +
       "essage\022\017\n\007version\030\001 \001(\t\022\022\n\nupdate_log\030\002 " +
       "\001(\014\022\022\n\nupdate_url\030\003 \001(\t\022I\n\rdownload_mode" +
-      "\030\004 \001(\01622.im.yai.AppVersionMessage.AppV" +
+      "\030\004 \001(\01622.im.kai.AppVersionMessage.AppV" +
       "ersionMessage.Mode\022G\n\013update_mode\030\005 \001(\0162" +
-      "2.im.yai.AppVersionMessage.AppVersionM" +
+      "2.im.kai.AppVersionMessage.AppVersionM" +
       "essage.Mode\"\212\001\n\004Mode\022\031\n\025DOWNLOAD_MODE_UN" +
       "KNOWN\020\000\022\032\n\026DOWNLOAD_MODE_REDIRECT\020\001\022\031\n\025D" +
       "OWNLOAD_MODE_INSTALL\020\002\022\026\n\022UPDATE_MODE_MA" +
       "NUAL\020\001\022\024\n\020UPDATE_MODE_AUTO\020\002\032\002\020\001\"$\n\004Type" +
       "\022\013\n\007UNKNOWN\020\000\022\017\n\013APP_VERSION\020\001\"\265\002\n\024Messa" +
-      "geNoticeMessage\022/\n\004type\030\001 \001(\0162!.im.yai.M" +
+      "geNoticeMessage\022/\n\004type\030\001 \001(\0162!.im.kai.M" +
       "essageNoticeMessage.Type\022\013\n\003seq\030\002 \001(\004\022\024\n" +
       "\014from_user_id\030\003 \001(\t\022\030\n\020from_device_type\030" +
       "\004 \001(\005\022\024\n\014from_room_id\030\005 \001(\t\022\022\n\nto_user_i" +
@@ -12488,29 +12488,29 @@ public final class WebSocketProtos {
       "om_id\030\010 \001(\t\022\021\n\ttimestamp\030\t \001(\004\"F\n\004Type\022\013" +
       "\n\007UNKNOWN\020\000\022\n\n\006REJECT\020\001\022\014\n\010DELIVERY\020\002\022\010\n" +
       "\004READ\020\003\022\r\n\tTAKE_BACK\020\004\"\214\001\n\021UserNoticeMes" +
-      "sage\022,\n\004type\030\001 \001(\0162\036.im.yai.UserNoticeMe" +
+      "sage\022,\n\004type\030\001 \001(\0162\036.im.kai.UserNoticeMe" +
       "ssage.Type\022\014\n\004data\030\002 \001(\014\";\n\004Type\022\013\n\007UNKN" +
       "OWN\020\000\022\024\n\020CONTACTS_CHANGED\020\001\022\020\n\014ROOM_CHAN" +
       "GED\020\002\"\352\005\n\021RoomNoticeMessage\022,\n\004type\030\001 \001(" +
-      "\0162\036.im.yai.RoomNoticeMessage.Type\022\021\n\ttim" +
+      "\0162\036.im.kai.RoomNoticeMessage.Type\022\021\n\ttim" +
       "estamp\030\002 \001(\004\022\017\n\007room_id\030\003 \001(\t\022\014\n\004data\030\004 " +
       "\001(\014\032=\n\010UserData\022\017\n\007user_id\030\001 \001(\t\022\020\n\010nick" +
       "name\030\002 \001(\014\022\016\n\006avatar\030\003 \001(\t\032y\n\013JoinMessag" +
-      "e\0223\n\007inviter\030\001 \001(\0132\".im.yai.RoomNoticeMe" +
+      "e\0223\n\007inviter\030\001 \001(\0132\".im.kai.RoomNoticeMe" +
       "ssage.UserData\0225\n\tjoin_user\030\002 \003(\0132\".im.y" +
       "ai.RoomNoticeMessage.UserData\032\177\n\rDeleteM" +
-      "essage\0224\n\010operator\030\001 \001(\0132\".im.yai.RoomNo" +
+      "essage\0224\n\010operator\030\001 \001(\0132\".im.kai.RoomNo" +
       "ticeMessage.UserData\0228\n\014deleted_user\030\002 \003" +
-      "(\0132\".im.yai.RoomNoticeMessage.UserData\032z" +
+      "(\0132\".im.kai.RoomNoticeMessage.UserData\032z" +
       "\n\017TransferMessage\0224\n\010operator\030\001 \001(\0132\".im" +
-      ".yai.RoomNoticeMessage.UserData\0221\n\005owner" +
-      "\030\002 \001(\0132\".im.yai.RoomNoticeMessage.UserDa" +
+      ".kai.RoomNoticeMessage.UserData\0221\n\005owner" +
+      "\030\002 \001(\0132\".im.kai.RoomNoticeMessage.UserDa" +
       "ta\032:\n\022DataUpdatedMessage\022\021\n\told_value\030\001 " +
       "\001(\014\022\021\n\tnew_value\030\002 \001(\014\"\201\001\n\004Type\022\013\n\007UNKNO" +
       "WN\020\000\022\r\n\tUSER_JOIN\020\001\022\r\n\tUSER_QUIT\020\002\022\017\n\013US" +
       "ER_DELETE\020\003\022\021\n\rROOM_TRANSFER\020\004\022\024\n\020ROOM_N" +
       "AME_UPDATE\020\005\022\024\n\020ROOM_ICON_UPDATE\020\006B8\n%im" +
-      ".yai.server.service.domain.protocolB\017Web" +
+      ".kai.server.service.domain.protocolB\017Web" +
       "SocketProtosb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
@@ -12525,77 +12525,77 @@ public final class WebSocketProtos {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_im_yai_WebSocketMessage_descriptor =
+    internal_static_im_kai_WebSocketMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_im_yai_WebSocketMessage_fieldAccessorTable = new
+    internal_static_im_kai_WebSocketMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_WebSocketMessage_descriptor,
+        internal_static_im_kai_WebSocketMessage_descriptor,
         new java.lang.String[] { "Id", "Version", "Type", "Data", });
-    internal_static_im_yai_UserOfflineMessage_descriptor =
+    internal_static_im_kai_UserOfflineMessage_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_im_yai_UserOfflineMessage_fieldAccessorTable = new
+    internal_static_im_kai_UserOfflineMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_UserOfflineMessage_descriptor,
+        internal_static_im_kai_UserOfflineMessage_descriptor,
         new java.lang.String[] { "Reason", "DeivceName", "RemoteAddress", });
-    internal_static_im_yai_SystemNoticeMessage_descriptor =
+    internal_static_im_kai_SystemNoticeMessage_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_im_yai_SystemNoticeMessage_fieldAccessorTable = new
+    internal_static_im_kai_SystemNoticeMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_SystemNoticeMessage_descriptor,
+        internal_static_im_kai_SystemNoticeMessage_descriptor,
         new java.lang.String[] { "Type", "Data", });
-    internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor =
-      internal_static_im_yai_SystemNoticeMessage_descriptor.getNestedTypes().get(0);
-    internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable = new
+    internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor =
+      internal_static_im_kai_SystemNoticeMessage_descriptor.getNestedTypes().get(0);
+    internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_SystemNoticeMessage_AppVersionMessage_descriptor,
+        internal_static_im_kai_SystemNoticeMessage_AppVersionMessage_descriptor,
         new java.lang.String[] { "Version", "UpdateLog", "UpdateUrl", "DownloadMode", "UpdateMode", });
-    internal_static_im_yai_MessageNoticeMessage_descriptor =
+    internal_static_im_kai_MessageNoticeMessage_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_im_yai_MessageNoticeMessage_fieldAccessorTable = new
+    internal_static_im_kai_MessageNoticeMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_MessageNoticeMessage_descriptor,
+        internal_static_im_kai_MessageNoticeMessage_descriptor,
         new java.lang.String[] { "Type", "Seq", "FromUserId", "FromDeviceType", "FromRoomId", "ToUserId", "ToDeviceType", "ToRoomId", "Timestamp", });
-    internal_static_im_yai_UserNoticeMessage_descriptor =
+    internal_static_im_kai_UserNoticeMessage_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_im_yai_UserNoticeMessage_fieldAccessorTable = new
+    internal_static_im_kai_UserNoticeMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_UserNoticeMessage_descriptor,
+        internal_static_im_kai_UserNoticeMessage_descriptor,
         new java.lang.String[] { "Type", "Data", });
-    internal_static_im_yai_RoomNoticeMessage_descriptor =
+    internal_static_im_kai_RoomNoticeMessage_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_im_yai_RoomNoticeMessage_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_descriptor,
         new java.lang.String[] { "Type", "Timestamp", "RoomId", "Data", });
-    internal_static_im_yai_RoomNoticeMessage_UserData_descriptor =
-      internal_static_im_yai_RoomNoticeMessage_descriptor.getNestedTypes().get(0);
-    internal_static_im_yai_RoomNoticeMessage_UserData_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_UserData_descriptor =
+      internal_static_im_kai_RoomNoticeMessage_descriptor.getNestedTypes().get(0);
+    internal_static_im_kai_RoomNoticeMessage_UserData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_UserData_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_UserData_descriptor,
         new java.lang.String[] { "UserId", "Nickname", "Avatar", });
-    internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor =
-      internal_static_im_yai_RoomNoticeMessage_descriptor.getNestedTypes().get(1);
-    internal_static_im_yai_RoomNoticeMessage_JoinMessage_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor =
+      internal_static_im_kai_RoomNoticeMessage_descriptor.getNestedTypes().get(1);
+    internal_static_im_kai_RoomNoticeMessage_JoinMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_JoinMessage_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_JoinMessage_descriptor,
         new java.lang.String[] { "Inviter", "JoinUser", });
-    internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor =
-      internal_static_im_yai_RoomNoticeMessage_descriptor.getNestedTypes().get(2);
-    internal_static_im_yai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor =
+      internal_static_im_kai_RoomNoticeMessage_descriptor.getNestedTypes().get(2);
+    internal_static_im_kai_RoomNoticeMessage_DeleteMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_DeleteMessage_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_DeleteMessage_descriptor,
         new java.lang.String[] { "Operator", "DeletedUser", });
-    internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor =
-      internal_static_im_yai_RoomNoticeMessage_descriptor.getNestedTypes().get(3);
-    internal_static_im_yai_RoomNoticeMessage_TransferMessage_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor =
+      internal_static_im_kai_RoomNoticeMessage_descriptor.getNestedTypes().get(3);
+    internal_static_im_kai_RoomNoticeMessage_TransferMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_TransferMessage_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_TransferMessage_descriptor,
         new java.lang.String[] { "Operator", "Owner", });
-    internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor =
-      internal_static_im_yai_RoomNoticeMessage_descriptor.getNestedTypes().get(4);
-    internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable = new
+    internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor =
+      internal_static_im_kai_RoomNoticeMessage_descriptor.getNestedTypes().get(4);
+    internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_im_yai_RoomNoticeMessage_DataUpdatedMessage_descriptor,
+        internal_static_im_kai_RoomNoticeMessage_DataUpdatedMessage_descriptor,
         new java.lang.String[] { "OldValue", "NewValue", });
   }
 

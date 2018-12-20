@@ -14,7 +14,7 @@ public class WebRtcConfiguration {
      * @return
      */
     @Bean
-    @ConfigurationProperties(prefix = "yai.service.webrtc.turn")
+    @ConfigurationProperties(prefix = "kai.service.webrtc.turn")
     public TurnProperties turnConfiguration(){
         return new TurnProperties();
     }
