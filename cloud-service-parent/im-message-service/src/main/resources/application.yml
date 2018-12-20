@@ -3,19 +3,22 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-
-    instance-id: ws://192.168.1.147:9901/
+    instance-id: ws://localhost:9901/
   client:
     service-url:
       defaultZone: http://localhost:8900/eureka/
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
   application:
     name: im-message-service
   rabbitmq:
-    host: 47.107.127.196
+    host: 127.0.0.1
     port: 5672
-    username: im
-    password: 123123
+    username: guest
+    password: guest
     virtual-host: /
   #Redis配置
   redis:
@@ -36,7 +39,7 @@ logging:
     org.springframework.http.server.reactive: DEBUG
     org.springframework.web.reactive: DEBUG
     reactor.ipc.netty: DEBUG
-yai:
+kai:
   service:
     message:
       app:
