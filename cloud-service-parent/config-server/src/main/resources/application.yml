@@ -4,8 +4,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8900/eureka/
-  instance:
-    prefer-ip-address: true
+  #instance:
+    #prefer-ip-address: true
     #ip-address: config.dev.kai.im
 spring:
   application:

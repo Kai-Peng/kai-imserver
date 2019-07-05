@@ -7,4 +7,3 @@ spring:
           search-paths: /cloud-service-parent/config-server/src/main/resources/config
           username: Kai-Peng
           password: KavyPeng12345
-          default-label:

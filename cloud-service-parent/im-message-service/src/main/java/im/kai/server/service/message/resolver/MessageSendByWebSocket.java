@@ -4,10 +4,12 @@ import im.kai.server.exception.ServerErrorException;
 import im.kai.server.service.message.protocol.WebSocketProtos;
 import im.kai.server.service.message.validator.ValidatorChainFactory;
 import im.kai.server.service.message.websocket.WebSocketSessionContext;
+import org.springframework.stereotype.Component;
 import org.springframework.web.socket.BinaryMessage;
 
 import java.io.IOException;
 
+@Component
 public class MessageSendByWebSocket{
     /**
      * 通过WebSocket发送消息

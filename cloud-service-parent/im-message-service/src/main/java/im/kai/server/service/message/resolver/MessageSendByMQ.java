@@ -7,7 +7,9 @@ import im.kai.server.service.message.validator.ValidatorChainFactory;
 import im.kai.server.service.message.websocket.WebSocketSessionContext;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MessageSendByMQ{
     //消息队列发送工具类
     @Autowired

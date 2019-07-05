@@ -1,25 +1,42 @@
 package im.kai.server.service.message.resolver;
 
+import com.netflix.discovery.converters.Auto;
 import im.kai.server.service.message.protocol.WebSocketProtos;
 import im.kai.server.service.message.websocket.WebSocketSessionContext;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Nullable;
 
 @Component
 public class MessageResolverFactory {
+    @Autowired
+    MessageResolver sendMessageResolver;
+
+    @Autowired
+    MessageResolver offlineMessageResolver;
+
+    @Autowired
+    MessageResolver messageNoticeResolver;
+
+    @Autowired
+    MessageResolver userNoticeResolver;
+
+    @Autowired
+    MessageResolver systemMessageResolver;
+
     @Nullable
-    public static MessageResolver getMessageResolver(WebSocketProtos.WebSocketMessage.Type type){
+    public MessageResolver getMessageResolver(WebSocketProtos.WebSocketMessage.Type type){
         if(type.equals(WebSocketProtos.WebSocketMessage.Type.SEND_MESSAGE)){
-            return new SendMessageResolver();
+            return sendMessageResolver;
         }else if (type.equals(WebSocketProtos.WebSocketMessage.Type.USER_OFFLINE)){
-            return new OfflineMessageResolver();
+            return offlineMessageResolver;
         }else if(type.equals(WebSocketProtos.WebSocketMessage.Type.MESSAGE_NOTICE)){
-            return new MessageNoticeResolver();
+            return messageNoticeResolver;
         }else if(type.equals(WebSocketProtos.WebSocketMessage.Type.USER_NOTICE)){
-            return new UserNoticeResolver();
+            return userNoticeResolver;
         } else if (type.equals(WebSocketProtos.WebSocketMessage.Type.SYSTEM_NOTICE)) {
-            return new SystemMessageResolver();
+            return systemMessageResolver;
         }
         return null;
     }

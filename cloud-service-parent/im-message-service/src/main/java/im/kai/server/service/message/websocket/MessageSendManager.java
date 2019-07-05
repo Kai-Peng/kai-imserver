@@ -1,5 +1,6 @@
 package im.kai.server.service.message.websocket;
 
+import com.netflix.discovery.converters.Auto;
 import im.kai.server.api.room.RoomService;
 import im.kai.server.domain.ApiResult;
 import im.kai.server.domain.user.DeviceType;
@@ -30,10 +31,14 @@ public class MessageSendManager {
     @Autowired(required = false)
     private RoomService mRoomService;
 
-    //发送策略类型：MQ, WEBSOCKET
-    public enum SendStrategyType{
-        MQ,WEBSOCKET;
-    }
+    @Autowired
+    private MessageResolverFactory messageResolverFactory;
+
+    @Autowired
+    private MessageSendByWebSocket messageSendByWebSocket;
+
+    @Autowired
+    private MessageSendByMQ messageSendByMQ;
 
     /**
      * MQ消息队列消息处理
@@ -43,9 +48,8 @@ public class MessageSendManager {
         Map<DeviceType, WebSocketSessionContext> wsContextMap = userDeviceSessionManager.getAll(mqMsg.getUserId());
 
         //通过WebSocket发送消息
-        MessageSendByWebSocket messageSendStrategy = new MessageSendByWebSocket();
         wsContextMap.forEach(((deviceType, webSocketSessionContext) -> {
-            messageSendStrategy.messageSend(webSocketSessionContext, mqMsg.getMqMsg());
+            messageSendByWebSocket.messageSend(webSocketSessionContext, mqMsg.getMqMsg());
         }));
     }
 
@@ -58,17 +62,15 @@ public class MessageSendManager {
      */
     public void noticeMsgSendByMQ(WebSocketSessionContext sessionContext, WebSocketProtos.WebSocketMessage.Type msgType,String queueName){
         //根据消息类型生成消息内容
-        MessageResolver messageResolver = MessageResolverFactory.getMessageResolver(msgType);
-        byte[] toMsg = (byte[]) messageResolver.resolve(sessionContext,null);
+        byte[] toMsg = (byte[]) messageResolverFactory.getMessageResolver(msgType).resolve(sessionContext,null);
 
         MqMsg mqMsg = new MqMsg();
         mqMsg.setMqMsg(toMsg);
         mqMsg.setUserId(sessionContext.getAuthToken().getUserId());
         mqMsg.setDeviceTypeId(String.valueOf(sessionContext.getAuthToken().getDevice().getDeviceSubType().getDeviceType().getId()));
 
-        MessageSendByMQ messageSendByMQ = new MessageSendByMQ();
         messageSendByMQ.messageSend(queueName, mqMsg);
-}
+    }
 
     /**
      * 发送服务器通知消息（默认通过WebSocket发送）
@@ -78,10 +80,8 @@ public class MessageSendManager {
      */
     public void noticeMsgSend(WebSocketSessionContext sessionContext, WebSocketProtos.WebSocketMessage.Type msgType){
         //根据消息类型生成消息内容
-        MessageResolver messageResolver = MessageResolverFactory.getMessageResolver(msgType);
-        byte[] toMsg = (byte[]) messageResolver.resolve(sessionContext,null);
+        byte[] toMsg = (byte[]) messageResolverFactory.getMessageResolver(msgType).resolve(sessionContext,null);
 
-        MessageSendByWebSocket messageSendByWebSocket= new MessageSendByWebSocket();
         messageSendByWebSocket.messageSend(sessionContext,toMsg);
     }
 
@@ -95,8 +95,7 @@ public class MessageSendManager {
             MessageProtos.Message msgData = MessageProtos.Message.parseFrom(fromMessage.getData());
 
             //通过消息转换器生成转发消息体
-            MessageResolver messageResolver = MessageResolverFactory.getMessageResolver(fromMessage.getType());
-            byte[] toMsg = (byte[]) messageResolver.resolve(sessionContext, fromMessage);
+            byte[] toMsg = (byte[]) messageResolverFactory.getMessageResolver(fromMessage.getType()).resolve(sessionContext, fromMessage);
 
             //发送群消息
             if(StringUtils.isNotEmpty(msgData.getToRoomId())){
@@ -105,21 +104,16 @@ public class MessageSendManager {
                 if(apiRst.getCode()==0&&apiRst.getData()!=null){
                     List<Long> userIds = (List<Long>)apiRst.getData();
                     userIds.forEach((uId)->{
-                        if(!uId.equals(sessionContext.getAuthToken().getUserId())) {//群消息不发给自己
-                            try {
-                                this.pointToPoint(sessionContext, toMsg, String.valueOf(uId), fromMessage);
-                            } catch (IOException e) {
-                                throw new ServerErrorException("通过WebSocket发送数据失败:"+sessionContext.getSession().getId(), e);
-                            }
+                        try {
+                            this.pointToPoint(sessionContext, toMsg, String.valueOf(uId), fromMessage);
+                        } catch (IOException e) {
+                            throw new ServerErrorException("通过WebSocket发送数据失败:"+sessionContext.getSession().getId(), e);
                         }
                     });
                 }
             }else if (StringUtils.isNotEmpty(msgData.getToUserId())){//发送点对点消息
                 this.pointToPoint(sessionContext, toMsg, msgData.getToUserId(), fromMessage);
             }
-
-            //将消息发给自己的其他设备
-            this.pointToPoint(sessionContext, toMsg, sessionContext.getAuthToken().getUserId(), fromMessage);
         } catch (Exception e) {
             throw new ServerErrorException("通过WebSocket发送数据失败:"+sessionContext.getSession().getId(), e);
         }
@@ -137,7 +131,7 @@ public class MessageSendManager {
         if(fromMessage.getType()==WebSocketProtos.WebSocketMessage.Type.SEND_MESSAGE
             && !toUserId.equals(sessionContext.getAuthToken().getUserId())){
             //消息通知生成类
-            MessageNoticeResolver messageResolver = (MessageNoticeResolver) MessageResolverFactory.getMessageResolver(WebSocketProtos.
+            MessageNoticeResolver messageResolver = (MessageNoticeResolver) messageResolverFactory.getMessageResolver(WebSocketProtos.
                     WebSocketMessage.Type.MESSAGE_NOTICE);
             //消息发送条件验证，验证通过才发消息
             if(ValidatorChainFactory.getValidatorChainObj(fromMessage.getType()).validateConditions()) {
@@ -168,21 +162,19 @@ public class MessageSendManager {
      */
     public void sendToPointDirect(WebSocketSessionContext sessionContext, byte[] toMsg, String toUserId,WebSocketProtos.WebSocketMessage fromMessage) {
         //通过WebSocket发送消息
-        MessageSendByWebSocket messageSendStrategy = new MessageSendByWebSocket();
         //获取需要发送的设备列表
         Map<DeviceType, WebSocketSessionContext> localSessionMap = userDeviceSessionManager.getAll(toUserId);
         localSessionMap.forEach((dvType, wsCtx) -> {
             if(toUserId.equals(sessionContext.getAuthToken().getUserId())) {//不发给自己的同类型设备
                 if(!dvType.equals(sessionContext.getAuthToken().getDevice().getDeviceSubType().getDeviceType())) {
-                    messageSendStrategy.messageSend(wsCtx, toMsg);
+                    messageSendByWebSocket.messageSend(wsCtx, toMsg);
                 }
             }else{
-                messageSendStrategy.messageSend(wsCtx, toMsg);
+                messageSendByWebSocket.messageSend(wsCtx, toMsg);
             }
         });
 
         //通过MQ发送消息
-        MessageSendByMQ messageSendByMQ = new MessageSendByMQ();
         //创建MQ消息对象
         MqMsg mqMsg = new MqMsg();
         mqMsg.setMqMsg(toMsg);
